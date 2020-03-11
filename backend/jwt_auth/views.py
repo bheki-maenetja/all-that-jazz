@@ -2,12 +2,14 @@ from datetime import datetime, timedelta
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.exceptions import PermissionDenied
-from rest_framework.status import HTTP_422_UNPROCESSABLE_ENTITY
+from rest_framework.status import HTTP_422_UNPROCESSABLE_ENTITY, HTTP_200_OK, HTTP_404_NOT_FOUND
 from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
 from .serializers import UserSerializer
+from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
+
 User = get_user_model()
 
 class RegisterView(APIView):
@@ -33,9 +35,21 @@ class LoginView(APIView):
       if not user.check_password(password):
         raise PermissionDenied({'message': 'Invalid Credentials'})
 
-      dt = datetime.now() + timedelta(days=7)
+      dt = datetime.now() + timedelta(days=14)
       token = jwt.encode({'sub': user.id, 'exp': int(dt.strftime('%s'))}, settings.SECRET_KEY, algorithm='HS256')
 
       return Response({'token': token, 'message': f'Welcome back {user.username}'})
     except User.DoesNotExist:
       raise PermissionDenied({'message': 'Invalid Credentials'})
+
+class ProfileView(APIView):
+
+  permission_classes = (IsAuthenticated, )
+
+  def get(self, request):
+    try:
+      user = User.objects.get(pk=request.user.id)
+      serialized_user = UserSerializer(user)
+      return Response(serialized_user.data, status=HTTP_200_OK)
+    except:
+      return Response({ 'message': 'User not found' }, status=HTTP_404_NOT_FOUND)
