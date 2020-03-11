@@ -19,7 +19,7 @@ class SinglePlaylist(APIView):
       playlist = Playlist.objects.get(pk=pk)
       serial_playlist = PopulatedPlaylistSerializer(playlist)
       return Response(serial_playlist.data, status=HTTP_200_OK)
-    except:
+    except Playlist.DoesNotExist:
       return Response({'message': 'Playlist not found'}, status=HTTP_404_NOT_FOUND)
 
 class ManyPlaylists(APIView):
