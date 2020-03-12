@@ -77,7 +77,7 @@ class LikeSong(APIView):
           user_data['favourite_songs'].append(chosen_song.id)
         elif chosen_song.id in user_data['favourite_songs']:
           return Response({'message': 'You already like this song'}, status=HTTP_200_OK)
-      except chosen_song.DoesNotExist:
+      except Song.DoesNotExist:
         return Response({'message': 'Song not found'}, HTTP_404_NOT_FOUND)
     
     updated_user = UpdateUserSerializer(user, data=user_data)
