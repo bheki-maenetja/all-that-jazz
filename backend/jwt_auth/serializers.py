@@ -35,6 +35,20 @@ class UserSerializer(serializers.ModelSerializer):
     model = User
     fields = '__all__'
 
+class UpdateUserSerializer(serializers.ModelSerializer):
+
+  class Meta:
+    model = User
+    fields = (
+      'email', 
+      'first_name', 
+      'last_name', 
+      'alias', 
+      'profile_image', 
+      'favourite_songs', 
+      'favourite_artists'
+    )
+
 # Foreign Serializers
 class ArtistSerializer(serializers.ModelSerializer):
 
