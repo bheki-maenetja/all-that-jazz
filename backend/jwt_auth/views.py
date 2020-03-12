@@ -7,7 +7,7 @@ from django.contrib.auth import get_user_model
 from django.conf import settings
 import jwt
 
-from .serializers import UserSerializer
+from .serializers import UserSerializer, PopulatedUserSerializer
 from rest_framework.permissions import IsAuthenticated, IsAuthenticatedOrReadOnly
 
 User = get_user_model()
@@ -49,7 +49,7 @@ class ProfileView(APIView):
   def get(self, request):
     try:
       user = User.objects.get(pk=request.user.id)
-      serialized_user = UserSerializer(user)
+      serialized_user = PopulatedUserSerializer(user)
       return Response(serialized_user.data, status=HTTP_200_OK)
     except:
       return Response({ 'message': 'User not found' }, status=HTTP_404_NOT_FOUND)

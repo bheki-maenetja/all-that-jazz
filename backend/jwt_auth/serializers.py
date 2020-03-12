@@ -6,6 +6,9 @@ from django.contrib.auth.hashers import make_password
 # from django.core.exceptions import ValidationError
 User = get_user_model()
 
+from playlists.models import Playlist
+
+# Native Serializers
 class UserSerializer(serializers.ModelSerializer):
 
   password = serializers.CharField(write_only=True)
@@ -29,3 +32,14 @@ class UserSerializer(serializers.ModelSerializer):
   class Meta:
     model = User
     fields = '__all__'
+
+# Foreign Serializers
+class PlaylistSerializer(serializers.ModelSerializer):
+
+  class Meta:
+    model = Playlist
+    exclude = ('owner', )
+
+# Native Populated Serializers
+class PopulatedUserSerializer(UserSerializer):
+  playlists = PlaylistSerializer(many=True)
