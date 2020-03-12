@@ -19,4 +19,4 @@ class Song(models.Model):
   categories = models.ManyToManyField(SongCategory, related_name='songs', blank=True)
 
   def __str__(self):
-    return f'{self.name} - {self.release_year} (Id: {self.id})'
+    return f'{self.name} by {self.artist.name} - {self.release_year} (Id: {self.id})'

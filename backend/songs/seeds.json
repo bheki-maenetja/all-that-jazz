@@ -1,0 +1,537 @@
+[
+{
+  "model": "songs.songcategory",
+  "pk": 1,
+  "fields": {
+    "name": "Love",
+    "description": "The perfect music for a romantic setting"
+  }
+},
+{
+  "model": "songs.songcategory",
+  "pk": 2,
+  "fields": {
+    "name": "Swing & Dance",
+    "description": "Get up and dance all night with these swingin' tunes"
+  }
+},
+{
+  "model": "songs.songcategory",
+  "pk": 3,
+  "fields": {
+    "name": "Sad & Lonely",
+    "description": "For those days when the sky is grey and life is no thrill"
+  }
+},
+{
+  "model": "songs.songcategory",
+  "pk": 4,
+  "fields": {
+    "name": "Soft & Gentle",
+    "description": "Smooth tunes that soothe the soul"
+  }
+},
+{
+  "model": "songs.songcategory",
+  "pk": 5,
+  "fields": {
+    "name": "Fun",
+    "description": "Music that bops"
+  }
+},
+{
+  "model": "songs.songcategory",
+  "pk": 6,
+  "fields": {
+    "name": "Inspiring",
+    "description": "Music that lifts you up even when you're down"
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 1,
+  "fields": {
+    "name": "The Way You Look Tonight",
+    "lyrics": "Some day, when I'm awfully low, When the world is cold, I will feel a glow just thinking of you, And the way you look tonight. Yes you're lovely, with your smile so warm And your cheeks so soft, There is nothing for me but to love you, And the way you look tonight. With each word your tenderness grows, Tearing my fear apart, And that laugh that wrinkles your nose, It touches my foolish heart. Lovely, Never, ever change. Keep that breathless charm. Won't you please arrange it? Cause I love you, Just the way you look tonight. Just the way you look to-night.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760304/upload_songs/03_The_Way_You_Look_Tonight_Remastered_ezoifp.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-f.dzcdn.net\\/stream\\/c-f413b678e8d7710098ef10b16f7dafac-5.mp3",
+    "release_year": 1964,
+    "artist": 3,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 2,
+  "fields": {
+    "name": "Come Fly with Me",
+    "lyrics": "Come fly with me, let's fly, let's fly away If you can use some exotic booze There's a bar in far Bombay Come fly with me, let's fly, let's fly away Come fly with me, let's float down to Peru In llama-land there's a one-man band And he'll toot his flute for you Come fly with me, let's take off in the blue Once I get you up there Where the air is rarefied We'll just glide Starry-eyed Once I get you up there I'll be holding you so near You may hear Angels cheer, 'cause we're together Weather-wise, it's such a lovely day Just say the words and we'll beat the birds Down to Acapulco Bay It is perfect for a flying honeymoon, they say Come fly with me, let's fly, let's fly away Once I get you up there Where the air is rarefied We'll just glide Starry-eyed Once I get you up there I'll be holding you so near You may hear Angels cheer, 'cause we're together Weather-wise, it's such a lovely day You just say the words and we'll beat the birds Down to Acapulco Bay It's perfect for a flying honeymoon, they say Come fly with me, let's fly let's fly Pack up let's fly away!",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760305/upload_songs/01_Come_Fly_With_Me_Remastered_sqr9xf.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-7.dzcdn.net\\/stream\\/c-7c9028592cce6feadb912f01ac756361-5.mp3",
+    "release_year": 1958,
+    "artist": 3,
+    "categories": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 3,
+  "fields": {
+    "name": "Can't We Be Friends",
+    "lyrics": "I thought I'd found the man of my dreams Now it seems, this is how the story ends He's going to turn me down and say Can't we be friends I thought for once it couldn't go wrong Not for long, I can see the way this ends He's going to turn me down and say Can't we be friends Never again, through with love Through with men They play their game without shame And who's to blame I thought I'd found a man I could trust What a bust, this is how the story ends He's going to turn me down and say Can't we be friends Yes, I thought I knew the wheat from the chaff What a laugh, this is how our story ends I'll let her turn me down and say Can't we be friends I acted like a kid out of school What a fool, now I see this is the end I'll let her turn me down and say Can't we be friends Oh what should I give Though he gave me the air Why should I cry He was sigh and wonder why Yes, I should have seen the signal to stop What a flop, this is how the story ends She's gonna turn me down and say Can't we be friends What should I give Though he gave me the air And why should I cry He was sigh and wonder why I should have seen the signal to stop What a flop, this is how the story ends I let him turn me down and say Can't we be, can't we be, can't we be Can't we be, can't we be, can't we be friends Oh yes",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010791/upload_songs_EllaFitzgerald/01_Can_t_We_Be_Friends__jkbpw3.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-b.dzcdn.net\\/stream\\/c-bc377a919e4543087ee48ac9e2107f34-2.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 4,
+  "fields": {
+    "name": "A Foggy Day",
+    "lyrics": "I was a stranger in the city Out of town were the people I knew I had that feeling of self-pity What to do, what to do, what to do The outlook was decidedly blue  But as I walked through the foggy streets alone It turned out to be the luckiest day I've known  A foggy day, in London town Had me low, had me down I viewed the morning, with much alarm British Museum, had lost its charm  How long I wondered, Could this thing last But the age of miracles, hadn't passed For suddenly, I saw you there And through foggy London town, The sun was shining everywhere  For suddenly, I saw you there And through foggy London town, The sun was shining everywhere  Everywhere Everywhere Everywhere",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010797/upload_songs_EllaFitzgerald/07_A_Foggy_Day_feat._Ray_Brown_Herb_Ellis_Oscar_Peterson_Buddy_Rich_bpquip.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-3.dzcdn.net\\/stream\\/c-36fbf22199e6d57a0abb0ed7ddc640e6-4.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 5,
+  "fields": {
+    "name": "Isn't This a Lovely Day",
+    "lyrics": "He weather is fright'ning The thunder and lightning Seem to be having their way But as far as I'm concerned, it's a lovely day The turn in the weather Will keep us together So I can honestly say That as far as I'm concerned, it's a lovely day And everything's o.k. Isn't this a lovely day To be caught in the rain? You were going on your way Now you've got to remain Just as you were going, leaving me all at sea The clouds broke, they broke and oh! What a break for me I can see the sun up high Tho' we're caught in the storm I can see where you and I Could be cozy and warm Let the rain pitter patter But it really doesn't matter If the skies are gray Long as I can be with you it's a lovely day",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010793/upload_songs_EllaFitzgerald/02_Isn_t_This_a_Lovely_Day__feat._Oscar_Peterson_Herb_Ellis_Ray_Brown_Buddy_Rich_ic2vuw.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-2.dzcdn.net\\/stream\\/c-2ef8464e3eeb6c4861962b7aa255d108-4.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 6,
+  "fields": {
+    "name": "Moonlight In Vermont",
+    "lyrics": "Pennies in a stream Falling leaves, a sycamore Moonlight in Vermont Icy finger-waves Ski trails on a mountainside Snowlight in Vermont Telegraph cables, they sing down the highway And travel each bend in the road People who meet in this romantic setting Are so hypnotized by the lovely Ev'ning summer breeze Warbling of a meadowlark Moonlight in Vermont Telegraph cables, how they sing down the highway And they travel each bend in the road People who meet in this romantic setting Are so hypnotized by the lovely Ev'ning summer breeze The warbling of a meadowlark Moonlight in Vermont Moonlight in Vermont Moonlight in Vermont",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010792/upload_songs_EllaFitzgerald/03_Moonlight_In_Vermont_feat._Ray_Brown_Herb_Ellis_Oscar_Peterson_Buddy_Rich_ods0pi.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-f.dzcdn.net\\/stream\\/c-ff52e1779bbb9f71b127f66add607dcd-8.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 7,
+  "fields": {
+    "name": "Under a Blanket of Blue",
+    "lyrics": "Under A Blanket of Blue Just you and I beneath the stars. Wrapped in the arms of sweet romance The night is ours.  Under A Blanket of Blue Let me be thrilled by all your charms Darling, I know my heart will dance Within your arms.  A summer night's magic, enthralling me so. The night would be tragic, if you weren't here to shareit my dear, Covered with heaven above.  Let's dream a dream of love for two, Wrapped in the arms of sweet romance, Under A Blanket of Blue.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010798/upload_songs_EllaFitzgerald/05_Under_a_Blanket_of_Blue_feat._Oscar_Peterson_Ray_Brown_Buddy_Rich_dgtmbu.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-0.dzcdn.net\\/stream\\/c-0cbcdc552bd620f5ed0e523c5f7a88ab-2.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 8,
+  "fields": {
+    "name": "Tenderly",
+    "lyrics": "The evening breeze caressed the trees tenderly The trembling trees embraced the breeze tenderly Then you and I came wandering by And lost in a sigh were we The shore was kissed by sea and mist tenderly I can't forget how two hearts met breathlessly Your arms opened wide and closed me inside You took my lips, you took my love so tenderly",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010793/upload_songs_EllaFitzgerald/06_Tenderly_o6u1fn.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-8.dzcdn.net\\/stream\\/c-8b22f2773754f2828f71f8cfaf5eb173-6.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 9,
+  "fields": {
+    "name": "Stars Fell on Alabama",
+    "lyrics": "We lived our little drama, we kissed in a field of white And stars fell on Alabama last night I can't forget the glamor, your eyes held a tender light And stars fell on Alabama last night I never planned in my imagination a situation so heavenly A fairy land where no one else could enter And in the center, just you and me My heart beat like a hammer, my arms wound around you tight And stars fell on Alabama last night I never planned in my imagination a situation so heavenly A fairy land where no one else could enter In the center, just you and me My heart beat like a hammer, my arms wound around you tight And stars fell on Alabama last night",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010797/upload_songs_EllaFitzgerald/08_Stars_Fell_On_Alabama_sui2zv.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-1.dzcdn.net\\/stream\\/c-11819cef1b785d358159ead2050e8a79-7.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 10,
+  "fields": {
+    "name": "Cheek to Cheek",
+    "lyrics": "Heaven, I'm in heaven, And my heart beats so that I can hardly speak And I seem to find the happiness I seek When we're out together dancing, cheek to cheek Heaven, I'm in heaven, And the cares that hang around me through the week Seem to vanish like a gambler's lucky streak When we're out together dancing, cheek to cheek Oh! I love to climb a mountain, And to reach the highest peak, But it doesn't thrill me half as much As dancing cheek to cheek Oh! I love to go out fishing In a river or a creek, But I don't enjoy it half as much As dancing cheek to cheek Dance with me I want my arm about you The charm about you Will carry me through to heaven I'm in heaven And my heart beats so that I can hardly speak And I seem to find the happiness I seek When we're out together dancing cheek to cheek",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010799/upload_songs_EllaFitzgerald/09_Cheek_to_Cheek_lfr5ii.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-6.dzcdn.net\\/stream\\/c-6357302206f1aa15c2546f458c24e43b-10.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 11,
+  "fields": {
+    "name": "The Nearness of You",
+    "lyrics": "It's not the pale moon that excites me That thrills and delights me, oh no It's just the nearness of you It isn't your sweet conversation That brings this sensation, oh no It's just the nearness of you When you're in my arms And I feel you so close to me All my wildest dreams come true I need no soft lights to enchant me If you'll only grant me the right to hold you ever so tight And to feel in the night the nearness of you It's not the pale moon that excites me That thrills and delights me, oh no Yes, it's just the nearness of you It isn't your sweet conversation That brings this sensation, oh no Yes, it's just the nearness of you When you're in my arms And I feel you so close to me All my wildest dreams come true And I need no soft lights to enchant me If you'll only grant me the right to hold you ever so tight, yeah babe And to feel in the night, babe, the nearness of you When you're in my arms And I feel you so close to me All my wildest dreams come true I need no soft lights to enchant me If you'll only grant me the right to hold you ever so tight And to feel in the night the nearness of you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010798/upload_songs_EllaFitzgerald/10_The_Nearness_of_You_dk2n2j.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-9.dzcdn.net\\/stream\\/c-9e1be8012fe84303f5ac8dcf7161fedb-3.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 12,
+  "fields": {
+    "name": "April in Paris",
+    "lyrics": "I never knew the charm of spring I never met it face to face I never knew my heart could sing I never missed a warm embrace Till April in Paris, chestnuts in blossom Holiday tables under the trees April in Paris, this is a feeling That no one can ever reprise I never knew the charm of spring I never met it face to face I never knew my heart could sing I never missed a warm embrace Till April in Paris Whom can I run to? What have you done to my heart?",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010801/upload_songs_EllaFitzgerald/11_April_In_Paris_bli2p9.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-3.dzcdn.net\\/stream\\/c-3ed484390ff5e595453ed51d1b4fe7bb-6.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 13,
+  "fields": {
+    "name": "They Can't Take That Away From Me",
+    "lyrics": "There are many many crazy things That will keep me loving you And with your permission May I list a few The way you wear your hat The way you sip your tea The memory of all that No, no they can't take that away from me The way your smile just beams The way you sing off key The way you haunt my dreams No, no they can't take that away from me We may never never meet again, on that bumpy road to love Still I'll always, always keep the memory of The way you hold your knife The way we danced until three The way you changed my life No, no they can't take that away from me No, they can't take that away from me",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1584010800/upload_songs_EllaFitzgerald/04_They_Can_t_Take_That_Away_from_Me_fkdwwv.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-6.dzcdn.net\\/stream\\/c-69144a6a36139ff43c9d6b5d13667a65-4.mp3",
+    "release_year": 1956,
+    "artist": 2,
+    "categories": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 14,
+  "fields": {
+    "name": "The Best Is Yet to Come",
+    "lyrics": "Out of the tree of life I just picked me a plum You came along and everything started'in to hum Still it's a real good bet The best is yet to come Best is yet to come and babe won't that be fine You think you've seen the sun But you ain't seen it shine A wait til the warm up's under way Wait til our lips have met And wait til you see that sunshine day You ain't seen nothing yet The best is yet to come And babe won't it be fine Best is yet to come, Come the day you're mine Come the day you're mine I'm gonna teach you to fly We've only tasted the wine We're gonna drain the cup dry Wait til your charms are right for these arms, to surround You think you've flown before But baby you ain't left the ground Wait till you're locked in my embrace Wait til I draw you near And wait til you see that sunshine place Ain't nothing like it here The best is yet to come And babe won't it be fine The best is yet to come, Come the day you're mine Come the day you're mine And you're gonna be mine",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760306/upload_songs/02_The_Best_Is_Yet_to_Come_feat._Count_Basie_His_Orchestra_Remastered_cj02wf.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-9.dzcdn.net\\/stream\\/c-919ad5ba95109db00b9f53cad523a9d3-6.mp3",
+    "release_year": 1964,
+    "artist": 3,
+    "categories": [
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 15,
+  "fields": {
+    "name": "Luck Be a Lady",
+    "lyrics": "Luck be a lady tonight Luck be a lady tonight Luck if you've been a lady to begin with Luck be a lady tonight Luck let a gentleman see Just how nice a dame you can be I know the way you've treated other guys you've been with Luck be a lady with me A lady never leaves her escort It isn't fair, it isn't nice A lady doesn't wander all over the room And blow on some other guys dice Lets keep this party polite Never get out of my sight Stick with me baby, I'm the guy that you came in with Luck be a lady tonight",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760306/upload_songs/04_Luck_Be_a_Lady_Remastered_yv2px0.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-7.dzcdn.net\\/stream\\/c-7a5997e2af7220b979316e1b5535dcb2-6.mp3",
+    "release_year": 1963,
+    "artist": 3,
+    "categories": [
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 16,
+  "fields": {
+    "name": "Bewitched",
+    "lyrics": "She's a fool and don't I know it? But a fool can have her charms I'm in love and don't I show it? Like a babe in arms Love's the same old sad sensation Lately, I've not slept a wink Since this silly situation Has me on the blink I'm wild again, beguiled again A simpering, whimpering child again Bewitched, bothered, and bewildered am I Couldn't sleep, wouldn't sleep Then love came and told me I shouldn't sleep Bewitched, bothered, and bewildered am I Lost my heart, but what of it? She is cold, I agree She might laugh, but I love it Although the laugh's on me I'll sing to her, bring spring to her And long for the day when I'll cling to her Bewitched, bothered and bewildered am I",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760303/upload_songs/05_Bewitched_Remastered_jdznfh.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-e.dzcdn.net\\/stream\\/c-eb44a40b56d0a279f7e6d8d8cc6278f8-6.mp3",
+    "release_year": 1957,
+    "artist": 3,
+    "categories": [
+      1,
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 17,
+  "fields": {
+    "name": "The Good Life",
+    "lyrics": "It's the good life, full of fun, seems to be the ideal, Yes, the good life, lest you hide all the sadness you feel, You won't really fall in love 'cause you can't take the chance, So be honest with yourself, don't try to fake romance. Yes, the good life, to be free and explore the unknown, Like the heartache when you learn you must face them alone, Please remember I still want you and in case you wonder why, Well, just wake up, kiss that good life goodbye. Please remember I still want you and in case you wonder why, Well, just wake up, kiss that good life goodbye.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760309/upload_songs/06_The_Good_Life_feat._Count_Basie_His_Orchestra_Remastered_w3uio7.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-a.dzcdn.net\\/stream\\/c-adacdcb49d904161c807cd659ffb5b3c-6.mp3",
+    "release_year": 1964,
+    "artist": 3,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 18,
+  "fields": {
+    "name": "The Girl from Ipanema",
+    "lyrics": "Tall and tan and young and lovely The girl from Ipanema goes walking And when she passes, each one she passes Goes \"a-a-a-h\" When she walks she's like a samba When she walks, she's like a samba That swings so cool and sways so gentle That when she passes, each one she passes Goes \"a-a-a-h\" Oh, but I watch her so sadly How can I tell her I love her Yes, I would give my heart gladly But each day as she walks to the sea She looks straight ahead, not at me Tall and tan and young and lovely The girl from Ipanema goes walking And when she passes, I smile, but she Doesn't see. She just doesn't see No, she just doesn't",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760308/upload_songs/07_The_Girl_From_Ipanema_Remastered_vbemzi.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-4.dzcdn.net\\/stream\\/c-41cce4b8249648e5baf16e2f89b5389f-5.mp3",
+    "release_year": 1967,
+    "artist": 3,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 19,
+  "fields": {
+    "name": "Fly Me to the Moon (In Other Words)",
+    "lyrics": "Fly me to the moon Let me play among the stars Let me see what spring is like On a, Jupiter and Mars In other words, hold my hand In other words, baby, kiss me  Fill my heart with song And let me sing for ever more You are all I long for All I worship and adore In other words, please be true In other words, I love you  Fill my heart with song Let me sing for ever more You are all I long for All I worship and adore In other words, please be true In other words, in other words I love you.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760309/upload_songs/08_Fly_Me_to_the_Moon_feat._Count_Basie_His_Orchestra_Remastered_sjripf.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-8.dzcdn.net\\/stream\\/c-872ee25fb58f790c43d01b5e9f19a112-5.mp3",
+    "release_year": 1964,
+    "artist": 3,
+    "categories": [
+      1,
+      2
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 20,
+  "fields": {
+    "name": "Strangers in the Night",
+    "lyrics": "Strangers in the night exchanging glances Wond'ring in the night What were the chances we'd be sharing love Before the night was through.  Something in your eyes was so inviting, Something in your smile was so exciting, Something in my heart, Told me I must have you.  Strangers in the night, two lonely people We were strangers in the night Up to the moment When we said our first hello. Little did we know Love was just a glance away, A warm embracing dance away and -  Ever since that night we've been together. Lovers at first sight, in love forever. It turned out so right, For strangers in the night.  Love was just a glance away, A warm embracing dance away -  Ever since that night we've been together. Lovers at first sight, in love forever. It turned out so right, For strangers in the night.  Do dody doby do do doo de la da da da da ya",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760310/upload_songs/10_Strangers_In_the_Night_Remastered_jjfty1.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-5.dzcdn.net\\/stream\\/c-588b49c82d6c78c6797c2cda818f24c0-5.mp3",
+    "release_year": 1966,
+    "artist": 3,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 21,
+  "fields": {
+    "name": "Call Me Irresponsible",
+    "lyrics": "Call me irresponsible - call me unreliable Throw in undependable too Do my foolish alibis bore you Well I'm not too clever - I just adore you  Call me unpredictable - tell me I'm impractical Rainbows I'm inclined to pursue Call me irresponsible - yes I'm unreliable But it's undeniably true - I'm irresponsibly mad for you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760308/upload_songs/11_Call_Me_Irresponsible_Remastered_msljtr.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-3.dzcdn.net\\/stream\\/c-3be5db6e2f37abd92773f33f344772be-6.mp3",
+    "release_year": 1963,
+    "artist": 3,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 22,
+  "fields": {
+    "name": "Somethin' Stupid",
+    "lyrics": "I know I stand in line until you think You have the time to spend an evening with me And if we go someplace to dance I know that there's a chance you won't be leaving with me And afterwards we drop into a quiet little place And have a drink or two And then I go and spoil it all by saying Something stupid like I love you I can see it in your eyes that you despise The same old lines you heard the night before And though it's just a line to you for me it's true And never seemed so right before I practice everyday to find some clever lines To say to make the meaning come true But then I think I'll wait until the evening gets late And I'm alone with you The time is right, your perfume fills my head The stars get blue and all my eyes get red And then I go and spoil it all by saying Something stupid like I love you The time is right, your perfume fills my head The stars get red and all the night's so blue And then I go and spoil it all by saying Something stupid like I love you I love you I love you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760309/upload_songs/12_Somethin_Stupid_Remastered_ocerkr.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-6.dzcdn.net\\/stream\\/c-67ebbf2555cafc4b6048401f32d1c830-5.mp3",
+    "release_year": 1967,
+    "artist": 3,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 23,
+  "fields": {
+    "name": "My Kind of Town",
+    "lyrics": "Now this could only happen to a guy like me And only happen in a town like this So may I say to each of you most gratefully As I throw each one of you a kiss  This is my kind of town, Chicago is My kind of town, Chicago is My kind of people too People who smile at you  And each time I roam, Chicago is Calling me home, Chicago is Why I just grin like a clown It's my kind of town  My kind of town, Chicago is My kind of town, Chicago is My kind of razzmatazz And it has, all that jazz  And each time I leave, Chicago is Tuggin' my sleeve, Chicago is The Wrigley building, Chicago is The union stockyard, Chicago is One town that won't let you down. It's my kind of town!",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760310/upload_songs/13_My_Kind_of_Town_Remastered_she5fi.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-e.dzcdn.net\\/stream\\/c-e268a260d372acff44c46e62fa95a9fd-6.mp3",
+    "release_year": 1963,
+    "artist": 3,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 24,
+  "fields": {
+    "name": "That's Life",
+    "lyrics": "That's life, that's what all the people say. You're riding high in April, Shot down in May But I know I'm gonna change that tune, When I'm back on top, back on top in June.  I said that's life, and as funny as it may seem Some people get their kicks, Stompin' on a dream But I don't let it, let it get me down, 'Cause this fine ol' world it keeps spinning around  I've been a puppet, a pauper, a pirate, A poet, a pawn and a king. I've been up and down and over and out And I know one thing: Each time I find myself, flat on my face, I pick myself up and get back in the race.  That's life I tell ya, I can't deny it, I thought of quitting baby, But my heart just ain't gonna buy it. And if I didn't think it was worth one single try, I'd jump right on a big bird and then I'd fly  I've been a puppet, a pauper, a pirate, A poet, a pawn and a king. I've been up and down and over and out And I know one thing: Each time I find myself laying flat on my face, I just pick myself up and get back in the race  That's life That's life and I can't deny it Many times I thought of cutting out But my heart won't buy it But if there's nothing shakin' come this here july I'm gonna roll myself up in a big ball and die My, My",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760320/upload_songs/15_That_s_Life_Remastered_i4edac.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-a.dzcdn.net\\/stream\\/c-ae0dd00e338d91dadc4f59377ff2ecc8-5.mp3",
+    "release_year": 1966,
+    "artist": 3,
+    "categories": [
+      3,
+      6
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 25,
+  "fields": {
+    "name": "Moonlight Serenade",
+    "lyrics": "I stand at your gate. And the song that I sing is of moonlight. I stand and I wait For a touch of your hand in a june night. The roses are sign of moonlight serenade.  The stars are all aglow. And tonight how their light set me dreaming. My love, do you know That your eyes are like stars brightly beaming? I bring you, and I sing you a moonlight serenade.  Let us trace \u2019til break of day In love\u2019s valley of dreams. Just you and i, a summer sky, A heavenly breeze, kiss on a tree.  So don\u2019t let me wait. Come to me tenderly in a june night. I stand at your gate And I sing you a song in a moonlight. A love song, my darling, a moonlight serenade",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760311/upload_songs/16_Moonlight_Serenade_Remastered_rqos6j.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-b.dzcdn.net\\/stream\\/c-b40126096d009db89fac8c91dabc0fec-6.mp3",
+    "release_year": 1966,
+    "artist": 3,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 26,
+  "fields": {
+    "name": "Nothing But The Best",
+    "lyrics": "I like a new Lincoln with all of its class, I like a martini, and bird under glass, I'm gonna start living, you wait and see, Nothing but the best is good enough for me.  I like to eat lobster directly from Maine, I like to see bullfights in sunny old Spain, I'm gonna start living, you wait and see, Nothing but the best is good enough for me.  Talley ho, off we go, who can wait another day, You and me, out on a spree, let's get started right away.  We're gonna go travelin', and have us a fling, We'll visit a palace, and dine with the king, We're gonna start living, you wait and see, Nothing but the best is good enough for me.  You and me, on a spree, let's get started right away.  We're a-gonna go a-travelin', and have us a fling, We'll visit a palace, and dine with the king, We're gonna start living, you just wait and see, Nothing but the best is good enough,. Nothing but the best is good enough for me.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760317/upload_songs/17_Nothing_But_the_Best_Remastered_jehpxl.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-9.dzcdn.net\\/stream\\/c-9ef4ebbb1b20708b0be747d94a7555d6-5.mp3",
+    "release_year": 1965,
+    "artist": 3,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 27,
+  "fields": {
+    "name": "Drinking Again",
+    "lyrics": "Drinkin' again and thinkin' of when, when you loved me I'm havin' a few and wishin' that you were here Makin' the rounds, accepting a round from strangers Bein' a fool just hopin' that you'll appear Sure, I can borrow a smoke, maybe tell some joker a bad joke But nobody laughs, they don't laugh at a broken heart Oh, yeah, I'm drinkin' again, it's always the same That same old story After the kicks there's little old mixed-up me Tryin' to lose a dream that used to be Look at me, I'm drinkin' again, drinkin' all over town Yeah, I'm drinkin' again",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760317/upload_songs/18_Drinking_Again_Remastered_rh2u6l.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-6.dzcdn.net\\/stream\\/c-6a996713f6ee2ba0fb292b99ce7a8fd0-5.mp3",
+    "release_year": 1957,
+    "artist": 3,
+    "categories": [
+      3,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 28,
+  "fields": {
+    "name": "All My Tomorrows",
+    "lyrics": "Today I may not have a thing at all Except for just a dream or two But I\u2019ve got lots of plans for tomorrow And all my tomorrows belong to you  Right now it may not seem like spring at all We\u2019re drifting and the laughs are few But I\u2019ve got rainbows planned for tomorrow And all my tomorrows belong to you  No one knows better than i That luck keeps passing me by ... that\u2019s fate But with you there at my side I\u2019ll soon be turrning the tide ... just wait  As long as I\u2019ve got arms that cling at all It\u2019s you that I\u2019ll be clinging to And all the dreams I dream, beg, or borrow On some bright tomorrow they\u2019ll all come true  And all my bright tomorrows belong to you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760321/upload_songs/19_All_My_Tomorrows_Remastered_rgkex8.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-7.dzcdn.net\\/stream\\/c-79d01966d9bc847007dde210978e7a29-6.mp3",
+    "release_year": 1969,
+    "artist": 3,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 29,
+  "fields": {
+    "name": "My Way",
+    "lyrics": "And now, the end is near; And so I face the final curtain. My friend, I'll say it clear, I'll state my case, of which I'm certain. I've lived a life that's full. I've traveled each and ev'ry highway; But more, much more than this, I did it my way.  Regrets, I've had a few; But then again, too few to mention. I did what I had to do And saw it through without exemption. I planned each charted course; Each careful step along the byway, But more, much more than this, I did it my way.  Yes, there were times, I'm sure you knew When I bit off more than I could chew. But through it all, when there was doubt, I ate it up and spit it out. I faced it all and I stood tall; And did it my way.  I've loved, I've laughed and cried. I've had my fill; my share of losing. And now, as tears subside, I find it all so amusing. To think I did all that; And may I say - not in a shy way, \"No, oh no not me, I did it my way\".  For what is a man, what has he got? If not himself, then he has naught. To say the things he truly feels; And not the words of one who kneels. The record shows I took the blows - And did it my way!  Yes it was my way.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760322/upload_songs/20_My_Way_Remastered_kofqcd.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-0.dzcdn.net\\/stream\\/c-019e89c8d1229719de6bc5d4a93e7528-4.mp3",
+    "release_year": 1969,
+    "artist": 3,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 30,
+  "fields": {
+    "name": "New York, New York",
+    "lyrics": "Start spreadin' the news, I'm leavin' today I want to be a part of it New York, New York These vagabond shoes, are longing to stray Right through the very heart of it New York, New York I wanna to wake up, in a city that doesn't sleep And find I'm king of the hill Top of the heap These little town blues Are melting away I'll make a brand new start of it In old New York If I can make it there, I'll make it anywhere It's up to you, New York, New York New York, New York I want to wake up in a city that never sleeps And find I'm a number one, top of the list King of the hill, a number one These little town blues, are melting away I'm gonna make a brand new start of it In old New York And If I can make it there I'm gonna make it anywhere It's up to you, New York New York New York",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760313/upload_songs/21_Theme_from_New_York_New_York_Remastered_ipzot0.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-6.dzcdn.net\\/stream\\/c-6d73425d6a29540c542b5981e0f685cf-5.mp3",
+    "release_year": 1980,
+    "artist": 3,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 31,
+  "fields": {
+    "name": "Body and Sould",
+    "lyrics": "My heart is sad and lonely For you I sigh, for you dear only Why haven't you seen it I'm all for you body and soul I spend my days in longin' And wondering why it's me you're (ogling)  I tell you I mean it I'm all for you body and soul I can't believe it It's hard to conceive it That you turn away romance Are you pretending It looks like the ending And less I could have one more chance to prove, dear  My life a wreck you're making You know I'm yours for just the taking I'd gladly surrender myself to you body and soul  My life a wreck you're making You know I'm yours for just the taking I would gladly surrender myself to you body and soul",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1583760313/upload_songs/22_Body_and_Soul_Remastered_kjxbny.mp3",
+    "audio_preview_url": "https:\\/\\/e-cdns-preview-1.dzcdn.net\\/stream\\/c-1e3de16ac2bd7ec7e0ccf9f32f7f2f56-5.mp3",
+    "release_year": 1949,
+    "artist": 3,
+    "categories": [
+      1,
+      3,
+      4
+    ]
+  }
+}
+]
