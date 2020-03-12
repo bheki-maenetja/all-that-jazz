@@ -8,4 +8,4 @@ class Artist(models.Model):
   image_url = models.CharField(max_length=1000)
 
   def __str__(self):
-    return f'{self.name} - {self.nickname}'
+    return f'{self.name} - {self.nickname} (Id: {self.id})'
