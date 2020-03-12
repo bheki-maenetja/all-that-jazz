@@ -7,6 +7,8 @@ from django.contrib.auth.hashers import make_password
 User = get_user_model()
 
 from playlists.models import Playlist
+from songs.models import Song
+from artists.models import Artist
 
 # Native Serializers
 class UserSerializer(serializers.ModelSerializer):
@@ -34,6 +36,19 @@ class UserSerializer(serializers.ModelSerializer):
     fields = '__all__'
 
 # Foreign Serializers
+class ArtistSerializer(serializers.ModelSerializer):
+
+  class Meta:
+    model = Artist
+    exclude = ('description', )
+
+class SongSerializer(serializers.ModelSerializer):
+
+  artist = ArtistSerializer()
+  class Meta:
+    model = Song
+    exclude = ('lyrics', 'audio_preview_url', 'categories')
+
 class PlaylistSerializer(serializers.ModelSerializer):
 
   class Meta:
@@ -41,5 +56,10 @@ class PlaylistSerializer(serializers.ModelSerializer):
     exclude = ('owner', )
 
 # Native Populated Serializers
+class PopulatedPlaylistSerializer(PlaylistSerializer):
+  songs = SongSerializer(many=True)
+
 class PopulatedUserSerializer(UserSerializer):
-  playlists = PlaylistSerializer(many=True)
+  playlists = PopulatedPlaylistSerializer(many=True)
+  favourite_songs = SongSerializer(many=True)
+  favourite_artists = ArtistSerializer(many=True)
