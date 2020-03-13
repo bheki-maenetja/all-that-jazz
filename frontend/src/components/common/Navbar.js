@@ -9,6 +9,10 @@ class Navbar extends React.Component {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
 
+  logout = () => {
+    this.setState({ navbarOpen: false })
+  }
+
   render() {
     const { navbarOpen } = this.state
     return (
@@ -29,7 +33,7 @@ class Navbar extends React.Component {
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/artists">Artists</Link>
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/music-player">Music Player</Link>
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/my-profile">My Profile</Link>
-              <Link className="navbar-item" to="/">Logout</Link>
+              <Link className="navbar-item" onClick={this.logout} to="/">Logout</Link>
             </div>
           </div>
         </div>
