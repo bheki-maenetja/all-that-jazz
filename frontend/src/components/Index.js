@@ -1,9 +1,12 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
+import 'bulma'
+
 import TitlePage from './common/TitlePage'
 import HomePage from './common/Home'
 import ErrorPage from './common/ErrorPage'
+import Navbar from './common/Navbar'
 
 import UserAuth from './auth/UserAuth'
 import MyProfile from './users/MyProfile'
@@ -18,6 +21,7 @@ import SongIndex from './songs/SongIndex'
 const Index = () => (
   <BrowserRouter>
   <>
+  <Navbar />
   <Switch>
     <Route exact path="/" component={TitlePage} />
     <Route path="/home" component={HomePage} />
