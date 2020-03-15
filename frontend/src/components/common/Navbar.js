@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
+import Authorize from '../../lib/authorize'
+
 class Navbar extends React.Component {
 
   state = { navbarOpen: false }
@@ -10,6 +12,7 @@ class Navbar extends React.Component {
   }
 
   logout = () => {
+    Authorize.logout()
     this.setState({ navbarOpen: false })
   }
 

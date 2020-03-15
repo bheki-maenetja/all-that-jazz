@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Navbar from '../common/Navbar'
+
 class SongIndex extends React.Component {
 
   state = {}
@@ -7,6 +9,7 @@ class SongIndex extends React.Component {
   render() {
     return (
       <>
+      <Navbar />
       <h1>The Song Index</h1>
       </>
     )

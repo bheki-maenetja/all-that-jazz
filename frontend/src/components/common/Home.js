@@ -1,6 +1,8 @@
 import React from 'react'
 import axios from 'axios'
 
+import Navbar from './Navbar'
+
 class HomePage extends React.Component {
 
   state = { data: [] }
@@ -19,6 +21,7 @@ class HomePage extends React.Component {
     console.log(this.state)
     return (
       <>
+      <Navbar />
       <h1>The Home Page</h1>
       </>
     )
