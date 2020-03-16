@@ -6,20 +6,9 @@ import AudioHandler from './AudioHandler'
 
 class HomePage extends React.Component {
 
-  state = { data: [] }
-
-  async componentDidMount() {
-    try {
-      const res = await axios.get('/api/artists/')
-      console.log(res)
-      this.setState({ data: res.data })
-    } catch(err) {
-      console.log(err)
-    }
-  }
+  state = {}
 
   render() {
-    console.log(this.state)
     return (
       <>
       <AudioHandler />
