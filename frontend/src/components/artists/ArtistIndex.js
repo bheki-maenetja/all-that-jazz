@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Navbar from '../common/Navbar'
+import AudioHandler from '../common/AudioHandler'
 
 class ArtistIndex extends React.Component {
 
@@ -9,6 +10,7 @@ class ArtistIndex extends React.Component {
   render() {
     return (
       <>
+      <AudioHandler />
       <Navbar />
       <h1>The Artist Index</h1>
       </>

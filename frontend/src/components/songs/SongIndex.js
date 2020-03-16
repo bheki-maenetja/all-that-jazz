@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Navbar from '../common/Navbar'
+import AudioHandler from '../common/AudioHandler'
 
 class SongIndex extends React.Component {
 
@@ -9,6 +10,7 @@ class SongIndex extends React.Component {
   render() {
     return (
       <>
+      <AudioHandler />
       <Navbar />
       <h1>The Song Index</h1>
       </>
