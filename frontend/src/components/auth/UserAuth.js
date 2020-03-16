@@ -11,6 +11,7 @@ class UserAuth extends React.Component {
     registerData: {
       first_name: '',
       last_name: '',
+      alias: '',
       profile_image: '',
       username: '',
       email: '',
@@ -72,11 +73,11 @@ class UserAuth extends React.Component {
     return (
       <>
       <section className="section" style={{ height: '100vh', display: 'flex', alignItems: 'center', overflowY: 'scroll'}}>
-        <div className="container">
-          <div className="columns is-vcentered">
+        <div className="container" style={{ height: '100%' }}>
+          <div className="columns is-vcentered" style={{ height: '100%' }}>
             {this.props.location.pathname === '/register' && 
               <>
-              <form className="column is-half is-offset-one-quarter">
+              <form className="column is-half is-offset-one-quarter" style={{ height: '100%' }}>
                 <h2 className="title is-2 has-text-centered">Register</h2>
                 <div className="field">
                   <label className="label">First Name</label>
@@ -107,12 +108,32 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label light-text-body">Alias</label>
+                  <div className="control">
+                    <input 
+                      type="text"
+                      className={`input ${this.state.errors.alias ? 'is-danger' : ''}`}
+                      name="alias"
+                      placeholder="Alias" 
+                      onChange={this.changeRegister}
+                      value={this.state.registerData['alias']}
+                    />
+                    {this.state.errors.alias && <small className="has-text-danger">{this.state.errors.alias[0]}</small>}
+                  </div>
+                </div>
+                <div className="field">
                   <label className={`label ${this.state.errors.profile_image ? 'has-text-danger' : ''}`}>Profile Image</label>
                   <div className="control">
                   { uploadedImage ?
+                    <>
+                    <span className="tag is-danger is-medium">
+                      Delete
+                      <button className="delete is-medium" onClick={() => this.setState({ uploadedImage: '' })}></button>
+                    </span>
                     <figure className="image">
                       <img src={uploadedImage} />
                     </figure>
+                    </>
                     :
                     <>
                     <input 
