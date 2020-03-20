@@ -5,6 +5,7 @@ from artists.models import Artist
 class SongCategory(models.Model):
   name = models.CharField(max_length=50)
   description = models.CharField(max_length=300)
+  image_url = models.CharField(max_length=1000, null=True)
 
   def __str__(self):
     return f'{self.name} (Id: {self.id})'

@@ -2,7 +2,6 @@ import React from 'react'
 import axios from 'axios'
 
 import Navbar from '../common/Navbar'
-import AudioHandler from '../common/AudioHandler'
 
 class SongIndex extends React.Component {
 
@@ -21,11 +20,12 @@ class SongIndex extends React.Component {
   }
 
   render() {
+    const { thisFunc } = this.props
     return (
       <>
-      <AudioHandler />
       <Navbar />
       <h1>The Song Index</h1>
+      <button className="button is-info" onClick={thisFunc}>CLICK ME!!!</button>
       </>
     )
   }

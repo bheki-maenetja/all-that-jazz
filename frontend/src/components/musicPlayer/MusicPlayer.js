@@ -1,7 +1,6 @@
 import React from 'react'
 
 import Navbar from '../common/Navbar'
-import AudioHandler from '../common/AudioHandler'
 
 class MusicPlayer extends React.Component {
 
@@ -10,7 +9,6 @@ class MusicPlayer extends React.Component {
   render() {
     return (
       <>
-      <AudioHandler />
       <Navbar />
       <h1>The Music Player</h1>
       </>
