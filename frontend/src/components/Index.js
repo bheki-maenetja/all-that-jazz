@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import 'bulma'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 import Authorize from '../lib/authorize'
 
