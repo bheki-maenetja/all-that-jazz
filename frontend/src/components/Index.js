@@ -23,13 +23,37 @@ import SongIndex from './songs/SongIndex'
 
 class Index extends React.Component {
 
-  state = {}
+  state = {
+    isSongPlaying: false,
+    currentSong: null,
+    isPreview: false
+  }
+
+  previewSong = songObj => {
+    this.setState({ currentSong: songObj, isSongPlaying: true, isPreview: true })
+  }
+
+  playSong = songObj => {
+    this.setState({ currentSong: songObj, isSongPlaying: true, isPreview: false })
+  }
+
+  endSong = () => {
+    this.setState({ isSongPlaying: false, currentSong: null })
+  }
 
   render() {
+    const { currentSong, isSongPlaying, isPreview } = this.state
     return (
       <>
       <BrowserRouter>
-      {Authorize.isAuthenticated() && <AudioHandler />}
+      {Authorize.isAuthenticated() && 
+        <AudioHandler 
+          isSongPlaying={isSongPlaying}
+          currentSong={currentSong}
+          endSong={this.endSong}
+          isPreview={isPreview}
+        />
+      }
       <Switch>
         <Route exact path="/" component={TitlePage} />
         <Route path="/home" component={HomePage} />
@@ -37,7 +61,7 @@ class Index extends React.Component {
         <Route path="/login" component={UserAuth} />
         <Route path="/my-profile" component={MyProfile} />
         <Route path="/songs">
-          <SongIndex thisFunc={() => console.log('Is this working?')} />
+          <SongIndex playSong={this.previewSong} />
         </Route>
         <Route path="/artists/:id" component={ArtistShow} />
         <Route path="/artists" component={ArtistIndex} />
