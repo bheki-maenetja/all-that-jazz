@@ -8,10 +8,8 @@ const AudioHandler = ({ isSongPlaying, currentSong, endSong, isPreview }) => (
       {isSongPlaying ?
       <>  
       <div className="media">
-        <figure className="media-left">
-          <p className="image is-128x128">
-            <img src={currentSong.artist.image_url} alt="artist name" />
-          </p>
+        <figure className="media-left image is-128x128">
+          <img className="is-rounded" src={currentSong.artist.image_url} alt={currentSong.artist.name} />
         </figure>
         <div className="media-content">
           <h1 className="title is-5 has-text-centered">{currentSong.name}</h1>
