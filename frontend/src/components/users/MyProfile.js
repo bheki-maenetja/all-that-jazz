@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Navbar from '../common/Navbar'
-
 class MyProfile extends React.Component {
 
   state = {}
@@ -9,7 +7,6 @@ class MyProfile extends React.Component {
   render() {
     return (
       <>
-      <Navbar />
       <h1>My Profile Page</h1>
       </>
     )

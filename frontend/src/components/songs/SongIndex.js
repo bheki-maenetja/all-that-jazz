@@ -4,8 +4,6 @@ import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
-import Navbar from '../common/Navbar'
-
 class SongIndex extends React.Component {
 
   state = {
@@ -57,8 +55,7 @@ class SongIndex extends React.Component {
     const { playSong } = this.props
     return (
       <>
-      <Navbar />
-      <div style={{height: '79vh', overflowY: 'scroll'}}>
+      <div style={{flexGrow: '1', overflowY: 'scroll'}}>
         <Carousel
           showThumbs={false} 
           showStatus={false} 

@@ -2,8 +2,6 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-import Navbar from '../common/Navbar'
-
 class ArtistIndex extends React.Component {
 
   state = {
@@ -33,8 +31,7 @@ class ArtistIndex extends React.Component {
     const { searchArtists } = this.state
     return (
       <>
-      <Navbar />
-      <div style={{height: '79vh', overflowY: 'scroll'}}>
+      <div style={{flexGrow: '1', overflowY: 'scroll'}}>
         <div className="hero is-success is-medium">
           <div className="hero-body">
             <h1 className="title is-1 has-text-centered">The Artist Index</h1>
