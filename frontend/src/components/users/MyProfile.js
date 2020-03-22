@@ -60,10 +60,10 @@ class MyProfile extends React.Component {
               <p className="subtitle is-6">Username: {userData.username}</p>
               <p className="subtitle is-6">Email: {userData.email}</p>
               <div className="buttons">
-                <button className="button is-warning is-fullwidth" onClick={this.changeSections} name="CreatePlaylist">Edit Profile</button>
                 <button className="button is-info is-fullwidth" onClick={this.changeSections} name="FavouriteSongs">My Songs</button>
-                <button className="button is-success is-fullwidth" onClick={this.changeSections} name="MyPlaylists">My Playlists</button>
                 <button className="button is-danger is-fullwidth" onClick={this.changeSections} name="FavouriteArtists">Favourite Artists</button>
+                <button className="button is-success is-fullwidth" onClick={this.changeSections} name="MyPlaylists">My Playlists</button>
+                <button className="button is-warning is-fullwidth" onClick={this.changeSections} name="CreatePlaylist">Create Playlist</button>
               </div>
             </aside>
           </div>

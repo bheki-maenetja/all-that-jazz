@@ -24,7 +24,6 @@ class MyPlaylists extends React.Component {
     const { playSong } = this.props
     const { currentPlaylist, userData } = this.state
     if (!userData) return null
-    console.log(currentPlaylist)
     return (
       <>
       <section className="section" style={{ height: '100%', overflowY: 'scroll' }}>

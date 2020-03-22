@@ -20,7 +20,7 @@ class ArtistIndex extends React.Component {
 
   basicSearchFunction = (e) => {
     const { artists } = this.state
-    const searchString = e.target.value.toLowerCase()
+    const searchString = e.target.value.toLowerCase().trim()
     const searchArtists = artists.filter(art => (
       art.name.toLowerCase().includes(searchString) || searchString.includes(art.name.toLowerCase())
     ))

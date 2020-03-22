@@ -21,7 +21,6 @@ import ArtistShow from './artists/ArtistShow'
 import MusicPlayer from './musicPlayer/MusicPlayer'
 
 import SongIndex from './songs/SongIndex'
-import EditProfile from './users/EditProfile'
 
 class Index extends React.Component {
 
