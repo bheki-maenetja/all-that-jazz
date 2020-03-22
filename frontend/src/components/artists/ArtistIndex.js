@@ -40,35 +40,35 @@ class ArtistIndex extends React.Component {
         </div>
         <section className="section">
           <div className="container">
-          <form>
-            <div className="field has-addons">
-              <div className="control is-expanded">
-                <input 
-                  type="text" 
-                  className="input" 
-                  onChange={this.basicSearchFunction} 
-                />
+            <form>
+              <div className="field has-addons">
+                <div className="control is-expanded">
+                  <input 
+                    type="text" 
+                    className="input" 
+                    onChange={this.basicSearchFunction} 
+                  />
+                </div>
+                <div className="control">
+                  <button type="submit" className="button is-primary" onClick={(e) => e.preventDefault()}>Search</button>
+                </div>
               </div>
-              <div className="control">
-                <button type="submit" className="button is-primary" onClick={(e) => e.preventDefault()}>Search</button>
-              </div>
+            </form>
+            <br />
+            <div className="columns is-mobile is-multiline">
+              {searchArtists.map(art => (
+                <>
+                <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
+                  <Link to={`/artists/${art.id}`}>
+                    <figure className="image is-square">
+                      <img className="is-rounded" src={art.image_url} alt={art.name} />
+                    </figure>
+                    <figcaption className="title is-4 has-text-centered">{art.name}</figcaption>
+                  </Link>
+                </div>
+                </>
+              ))}
             </div>
-          </form>
-          <br />
-          <div className="columns is-mobile is-multiline">
-            {searchArtists.map(art => (
-              <>
-              <div className="column is-one-quarter-desktop is-one-third-tablet is-half-mobile">
-                <Link to={`/artists/${art.id}`}>
-                  <figure className="image is-square">
-                    <img className="is-rounded" src={art.image_url} alt={art.name} />
-                  </figure>
-                  <figcaption className="title is-4 has-text-centered">{art.name}</figcaption>
-                </Link>
-              </div>
-              </>
-            ))}
-          </div>
           </div>
         </section>
       </div>

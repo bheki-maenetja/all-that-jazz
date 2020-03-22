@@ -21,6 +21,7 @@ import ArtistShow from './artists/ArtistShow'
 import MusicPlayer from './musicPlayer/MusicPlayer'
 
 import SongIndex from './songs/SongIndex'
+import EditProfile from './users/EditProfile'
 
 class Index extends React.Component {
 
@@ -64,7 +65,9 @@ class Index extends React.Component {
           <Route path="/home" component={HomePage} />
           <Route path="/register" component={UserAuth} />
           <Route path="/login" component={UserAuth} />
-          <Route path="/my-profile" component={MyProfile} />
+          <Route path="/my-profile">
+            <MyProfile playSong={this.playSong} />
+          </Route>
           <Route path="/songs">
             <SongIndex playSong={this.previewSong} />
           </Route>

@@ -3,11 +3,19 @@ import axios from 'axios'
 
 import Authorize from '../../lib/authorize'
 
+import FavouriteSongs from './FavouriteSongs'
+import FavouriteArtists from './FavouriteArtists'
+import MyPlaylists from './MyPlaylists'
+import CreatePlaylist from './CreatePlaylist'
+
 class MyProfile extends React.Component {
 
   state = {
-    userData: {}
+    userData: {},
+    sectionName: '',
   }
+
+  
 
   async componentDidMount() {
     try {
@@ -22,9 +30,18 @@ class MyProfile extends React.Component {
     }
   }
 
+  changeSections = (e) => {
+    this.setState({ sectionName: e.target.name })
+  }
+
   render() {
-    const { userData } = this.state
-    console.log(userData)
+    const { userData, sectionName } = this.state
+    const sections = {
+      'FavouriteSongs': <FavouriteSongs userData={this.state.userData} playSong={this.props.playSong} />,
+      'FavouriteArtists': <FavouriteArtists userData={this.state.userData} />,
+      'MyPlaylists': <MyPlaylists userData={this.state.userData} playSong={this.props.playSong} />,
+      'CreatePlaylist': <CreatePlaylist userData={this.state.userData} />
+    }
     return (
       <>
       <section className="section" style={{ flexGrow: '1', overflowY: 'scroll' }}>
@@ -43,15 +60,15 @@ class MyProfile extends React.Component {
               <p className="subtitle is-6">Username: {userData.username}</p>
               <p className="subtitle is-6">Email: {userData.email}</p>
               <div className="buttons">
-                <button className="button is-warning is-fullwidth">Edit Profile</button>
-                <button className="button is-info is-fullwidth">My Songs</button>
-                <button className="button is-success is-fullwidth">My Playlists</button>
-                <button className="button is-danger is-fullwidth">Create Playlist</button>
+                <button className="button is-warning is-fullwidth" onClick={this.changeSections} name="CreatePlaylist">Edit Profile</button>
+                <button className="button is-info is-fullwidth" onClick={this.changeSections} name="FavouriteSongs">My Songs</button>
+                <button className="button is-success is-fullwidth" onClick={this.changeSections} name="MyPlaylists">My Playlists</button>
+                <button className="button is-danger is-fullwidth" onClick={this.changeSections} name="FavouriteArtists">Favourite Artists</button>
               </div>
             </aside>
           </div>
-          <div className="column is-three-quarters-desktop is-three-quarters-tablet is-full-mobile">
-
+          <div className="column is-three-quarters-desktop is-three-quarters-tablet is-full-mobile" style={{ height: '100%' }}>
+            {sections[sectionName]}
           </div>
         </div>
       </section>
