@@ -117,7 +117,7 @@ class LikeArtist(APIView):
 
   permission_classes = (IsAuthenticated, )
 
-  def get(self, request):
+  def post(self, request):
     user = User.objects.get(pk=request.user.id)
     user_data = UpdateUserSerializer(user).data
 
@@ -142,7 +142,7 @@ class UnlikeArtist(APIView):
 
   permission_classes = (IsAuthenticated, )
 
-  def get(self, request):
+  def post(self, request):
     user = User.objects.get(pk=request.user.id)
     user_data = UpdateUserSerializer(user).data
 
