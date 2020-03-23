@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-const FavouriteSongs = ({ userData, playSong }) => (
+const FavouriteSongs = ({ userData, playSong, removeSong }) => (
   <>
   <section className="section" style={{ height: '100%', overflowY: 'scroll' }}>
     <h1 className="title is-3 has-text-centered">My Songs</h1>
@@ -18,17 +19,16 @@ const FavouriteSongs = ({ userData, playSong }) => (
             <h4 className="subtitle is-6">{song.name}</h4>
           </div>
           <div className="level-item has-text-left">
-            <h4 className="subtitle is-6">{song.artist.name}</h4>
+            <Link to={`/artists/${song.artist.id}`}>
+              <h4 className="subtitle is-6">{song.artist.name}</h4>
+            </Link>
           </div>
           <div className="level-item has-text-left">
             <h4 className="subtitle is-6">{song.release_year}</h4>
           </div>
           <div className="level-right">
             <div className="level-item">
-              <button className="button is-info">Info</button>
-            </div>
-            <div className="level-item">
-              <button className="button is-danger">Remove</button>
+              <button className="button is-danger" onClick={() => removeSong(song.id)}>Remove</button>
             </div>
           </div>
         </div>

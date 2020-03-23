@@ -11,8 +11,8 @@ import CreatePlaylist from './CreatePlaylist'
 class MyProfile extends React.Component {
 
   state = {
-    userData: {},
-    sectionName: '',
+    userData: null,
+    sectionName: 'FavouriteSongs',
   }
 
   
@@ -30,14 +30,47 @@ class MyProfile extends React.Component {
     }
   }
 
+  refreshPage = async () => {
+    const { sectionName } = this.state
+    try {
+      const res = await axios.get('/api/users/my-profile/', {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.setState({ 
+        userData: res.data,
+        sectionName 
+      })
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
   changeSections = (e) => {
     this.setState({ sectionName: e.target.name })
   }
 
+  unlikeSong = async (songId) => {
+    try {
+      const res = await axios.post('/api/users/unlike-song/', {
+        'songIds': [songId]
+      },  {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.refreshPage()
+    } catch (err) {
+      console.log(err) 
+    }
+  }
+
   render() {
     const { userData, sectionName } = this.state
+    if (!userData) return null
     const sections = {
-      'FavouriteSongs': <FavouriteSongs userData={this.state.userData} playSong={this.props.playSong} />,
+      'FavouriteSongs': <FavouriteSongs userData={this.state.userData} playSong={this.props.playSong} removeSong={this.unlikeSong} />,
       'FavouriteArtists': <FavouriteArtists userData={this.state.userData} />,
       'MyPlaylists': <MyPlaylists userData={this.state.userData} playSong={this.props.playSong} />,
       'CreatePlaylist': <CreatePlaylist userData={this.state.userData} />
