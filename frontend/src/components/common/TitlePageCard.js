@@ -1,5 +1,4 @@
 import React from 'react'
-import TitlePage from './TitlePage'
 
 const TitlePageCard = ({ imageURL, name }) => (
   <>

@@ -64,9 +64,9 @@ class ProfileView(APIView):
 # Like & Unlinking Songs
 class LikeSong(APIView):
 
-  permission_classes = (IsAuthenticated, )
+  permission_classes = (IsAuthenticatedOrReadOnly, )
 
-  def get(self, request):
+  def post(self, request):
     user = User.objects.get(pk=request.user.id)
     user_data = UpdateUserSerializer(user).data
 
@@ -91,7 +91,7 @@ class UnlikeSong(APIView):
 
   permission_classes = (IsAuthenticated, )
 
-  def get(self, request):
+  def post(self, request):
     user = User.objects.get(pk=request.user.id)
     user_data = UpdateUserSerializer(user).data
 

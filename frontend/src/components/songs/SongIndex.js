@@ -4,9 +4,14 @@ import axios from 'axios'
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from 'react-responsive-carousel'
 
+import Authorize from '../../lib/authorize'
+
+import SongItem from './SongItem'
+
 class SongIndex extends React.Component {
 
   state = {
+    userData: {},
     songCategories: [],
     allSongs: [],
     searchString: '',
@@ -18,14 +23,41 @@ class SongIndex extends React.Component {
     try {
       const res = await Promise.all([
         axios.get('/api/songs/categories/'),
-        axios.get('/api/songs/')
+        axios.get('/api/songs/'),
+        axios.get('/api/users/my-profile/', {
+          headers: {
+            Authorization: `Bearer ${Authorize.getToken()}`
+          }
+        })
       ])
       this.setState({ 
         songCategories: res[0].data, 
         allSongs: res[1].data, 
-        searchSongs: res[1].data, 
+        searchSongs: res[1].data,
+        userData: res[2].data 
       })
     } catch(err) {
+      console.log(err)
+    }
+  }
+
+  refreshPage = async () => {
+    const { pageIndex } = this.state
+    try {
+      const res = await Promise.all([
+        axios.get('/api/songs/'),
+        axios.get('/api/users/my-profile/', {
+          headers: {
+            Authorization: `Bearer ${Authorize.getToken()}`
+          }
+        })
+      ])
+      await this.setState({ 
+        userData: res[1].data, 
+        allSongs: res[0].data
+      })
+      this.changeSongs(pageIndex)
+    } catch (err) {
       console.log(err)
     }
   }
@@ -48,6 +80,42 @@ class SongIndex extends React.Component {
       searchString.includes(song.artist.name.toLowerCase())
     ))
     this.setState({ searchSongs: searchData, searchString: e.target.value })
+  }
+
+  getSongStatus = (song) => {
+    const { userData } = this.state
+    const songIds = userData.favourite_songs.map(song => song.id)
+    return songIds.includes(song.id)
+  }
+
+  likeSong = async (songId) => {
+    try {
+      const res = await axios.post('/api/users/like-song/', {
+        'songIds': [songId]
+      },  {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.refreshPage()
+    } catch (err) {
+      console.log(err) 
+    }
+  }
+
+  unlikeSong = async (songId) => {
+    try {
+      const res = await axios.post('/api/users/unlike-song/', {
+        'songIds': [songId]
+      },  {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.refreshPage()
+    } catch (err) {
+      console.log(err) 
+    }
   }
 
   render() {
@@ -114,30 +182,14 @@ class SongIndex extends React.Component {
             </div>
             {searchSongs.map(song => (
               <>
-              <div className="level card box">
-                <div className="level-left">
-                  <a onClick={() => playSong(song)}>
-                    <i className="fas fa-play-circle fa-2x"></i>
-                  </a>
-                </div>
-                <div className="level-item has-text-left">
-                  <h4 className="subtitle is-6">{song.name}</h4>
-                </div>
-                <div className="level-item has-text-left">
-                  <h4 className="subtitle is-6">{song.artist.name}</h4>
-                </div>
-                <div className="level-item has-text-left">
-                  <h4 className="subtitle is-6">{song.release_year}</h4>
-                </div>
-                <div className="level-right">
-                  <div className="level-item">
-                    <button className="button is-info">Info</button>
-                  </div>
-                  <div className="level-item">
-                    <button className="button is-warning">Add</button>
-                  </div>
-                </div>
-              </div>
+                <SongItem 
+                  key={song.id} 
+                  song={song} 
+                  playSong={playSong}
+                  getLikeStatus={this.getSongStatus}
+                  likeSong={this.likeSong}
+                  unlikeSong={this.unlikeSong}
+                />
               </>
             ))}
           </div>
