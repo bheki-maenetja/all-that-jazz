@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import Notifications from 'react-notify-toast'
 
 import 'bulma'
 import '@fortawesome/fontawesome-free/css/all.css'
@@ -57,6 +58,7 @@ class Index extends React.Component {
             isPreview={isPreview}
           />
           <Navbar />
+          <Notifications />
           </>
         }
         <Switch>

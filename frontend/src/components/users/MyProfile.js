@@ -1,5 +1,6 @@
 import React from 'react'
 import axios from 'axios'
+import { notify } from 'react-notify-toast'
 
 import Authorize from '../../lib/authorize'
 
@@ -13,6 +14,11 @@ class MyProfile extends React.Component {
   state = {
     userData: null,
     sectionName: 'FavouriteSongs',
+    formData: {
+      name: '',
+      description: '',
+    },
+    errors: {}
   }
 
   
@@ -40,7 +46,9 @@ class MyProfile extends React.Component {
       })
       this.setState({ 
         userData: res.data,
-        sectionName 
+        sectionName,
+        formData: { ...this.state.formData, name: '', description: '' },
+        errors: {} 
       })
     } catch (err) {
       console.log(err)
@@ -66,15 +74,54 @@ class MyProfile extends React.Component {
     }
   }
 
+  changeForm = ({ target: { name, value } }) => {
+    this.setState({ 
+      formData: { ...this.state.formData, [name]: value }, 
+      errors: { ...this.state.errors, [name]: '' } 
+    })
+  }
+
+  createPlaylist = async (e) => {
+    e.preventDefault()
+
+    try {
+      const res = await axios.post('/api/playlists/', this.state.formData, {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      notify.show('Playlist created', 'info', 2000, 'deepskyblue')
+      this.refreshPage()
+    } catch (err) {
+      console.log('SOMETHING IS VERY WRONG!!!\n', err)
+      this.setState({ errors: err.response.data })
+    }
+  }
+
   render() {
     const { userData, sectionName } = this.state
     if (!userData) return null
     const sections = {
-      'FavouriteSongs': <FavouriteSongs userData={this.state.userData} playSong={this.props.playSong} removeSong={this.unlikeSong} />,
-      'FavouriteArtists': <FavouriteArtists userData={this.state.userData} />,
-      'MyPlaylists': <MyPlaylists userData={this.state.userData} playSong={this.props.playSong} />,
-      'CreatePlaylist': <CreatePlaylist userData={this.state.userData} />
+      'FavouriteSongs': <FavouriteSongs 
+                          userData={this.state.userData} 
+                          playSong={this.props.playSong} 
+                          removeSong={this.unlikeSong} 
+                        />,
+      'FavouriteArtists': <FavouriteArtists 
+                            userData={this.state.userData} 
+                          />,
+      'MyPlaylists': <MyPlaylists 
+                      userData={this.state.userData} 
+                      playSong={this.props.playSong} 
+                    />,
+      'CreatePlaylist': <CreatePlaylist 
+                          formData={this.state.formData}
+                          changeForm={this.changeForm}
+                          errors={this.state.errors}
+                          createPlaylist={this.createPlaylist} 
+                        />
     }
+    console.log(this.state)
     return (
       <>
       <section className="section" style={{ flexGrow: '1', overflowY: 'scroll' }}>
