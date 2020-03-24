@@ -18,10 +18,14 @@ class MyProfile extends React.Component {
       name: '',
       description: '',
     },
-    errors: {}
+    errors: {},
+    currentPlaylist: {
+      songs: []
+    },
+    selectedSongIds: [],
+    songOptions: [],
+    addingSongs: false
   }
-
-  
 
   async componentDidMount() {
     try {
@@ -37,7 +41,7 @@ class MyProfile extends React.Component {
   }
 
   refreshPage = async () => {
-    const { sectionName } = this.state
+    const { sectionName, currentPlaylist } = this.state
     try {
       const res = await axios.get('/api/users/my-profile/', {
         headers: {
@@ -48,8 +52,13 @@ class MyProfile extends React.Component {
         userData: res.data,
         sectionName,
         formData: { ...this.state.formData, name: '', description: '' },
-        errors: {} 
+        errors: {},
+        selectedSongIds: [],
+        songOptions: [],
+        addingSongs: false,
+        currentPlaylist: res.data.playlists.filter(pl => pl.id === currentPlaylist.id)[0]
       })
+      this.changeSongs()
     } catch (err) {
       console.log(err)
     }
@@ -98,6 +107,79 @@ class MyProfile extends React.Component {
     }
   }
 
+  handleChange = async (e) => {
+    const { userData } = this.state
+    
+    await this.setState({ 
+      currentPlaylist: userData.playlists.filter(item => item.id === parseInt(e.target.value))[0],
+      addingSongs: false,
+      selectedSongIds: [] 
+    })
+    this.changeSongs()
+  }
+
+  handleMultiChange = (selected) => {
+    const selectedSongIds = selected ? selected.map(item => item.value) : []
+    this.setState({ selectedSongIds })
+  }
+
+  changeSongs = () => {
+    const { currentPlaylist, userData } = this.state
+    const songOptions = []
+
+    const songIds = currentPlaylist.songs.map(song => song.id)
+    userData.favourite_songs.map(song => {
+      if (!songIds.includes(song.id)) {
+        songOptions.push({ value: song.id, label: `${song.name} by ${song.artist.name}` })
+      }
+    })
+    this.setState({ songOptions })
+  }
+
+  showSongOptions = () => {
+    this.setState({ addingSongs: true })
+  }
+
+  hideSongOptions = () => {
+    this.setState({ addingSongs: false })
+  }
+
+  addSongsToPlaylist = async (e) => {
+    e.preventDefault()
+
+    const { selectedSongIds, currentPlaylist } = this.state
+
+    try {
+      const res = await axios.post(`/api/playlists/${currentPlaylist.id}/add-song/`, {
+        songIds: selectedSongIds
+      }, {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.refreshPage()
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  removeSongFromPlaylist = async (songId) => {
+    const { currentPlaylist } = this.state
+
+    try {
+      const res = await axios.post(`/api/playlists/${currentPlaylist.id}/remove-song/`, {
+        songIds: [songId]
+      }, {
+        headers: {
+          Authorization: `Bearer ${Authorize.getToken()}`
+        }
+      })
+      this.refreshPage()
+    } catch (err) {
+      console.log(err)
+    }
+  } 
+
   render() {
     const { userData, sectionName } = this.state
     if (!userData) return null
@@ -111,8 +193,17 @@ class MyProfile extends React.Component {
                             userData={this.state.userData} 
                           />,
       'MyPlaylists': <MyPlaylists 
-                      userData={this.state.userData} 
                       playSong={this.props.playSong} 
+                      userData={this.state.userData}
+                      currentPlaylist={this.state.currentPlaylist}
+                      addingSongs={this.state.addingSongs}
+                      songOptions={this.state.songOptions}
+                      handleChange={this.handleChange}
+                      handleMultiChange={this.handleMultiChange}
+                      showSongOptions={this.showSongOptions}
+                      hideSongOptions={this.hideSongOptions}
+                      addSongs={this.addSongsToPlaylist}
+                      removeSong={this.removeSongFromPlaylist}
                     />,
       'CreatePlaylist': <CreatePlaylist 
                           formData={this.state.formData}
@@ -121,7 +212,6 @@ class MyProfile extends React.Component {
                           createPlaylist={this.createPlaylist} 
                         />
     }
-    console.log(this.state)
     return (
       <>
       <section className="section" style={{ flexGrow: '1', overflowY: 'scroll' }}>

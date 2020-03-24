@@ -47,7 +47,7 @@ class AddSongToPlaylist(APIView):
 
   permission_classes = (IsAuthenticated, )
 
-  def get(self, request, pk):
+  def post(self, request, pk):
     try:
       playlist = Playlist.objects.get(pk=pk)
       if request.user.id != playlist.owner.id:
@@ -77,7 +77,7 @@ class RemoveSongFromPlaylist(APIView):
 
   permission_classes = (IsAuthenticated, )
 
-  def get(self, request, pk):
+  def post(self, request, pk):
     try:
       playlist = Playlist.objects.get(pk=pk)
       if request.user.id != playlist.owner.id:
