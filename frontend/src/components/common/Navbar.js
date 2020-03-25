@@ -11,9 +11,11 @@ class Navbar extends React.Component {
     this.setState({ navbarOpen: !this.state.navbarOpen })
   }
 
-  logout = () => {
+  handleLogOut = () => {
     Authorize.logout()
     this.setState({ navbarOpen: false })
+    const { logout } = this.props
+    logout()
   }
 
   render() {
@@ -34,9 +36,8 @@ class Navbar extends React.Component {
             <div className="navbar-end">
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/songs">Songs</Link>
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/artists">Artists</Link>
-              <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/music-player">Music Player</Link>
               <Link className="navbar-item" onClick={() => this.setState({ navbarOpen: false })} to="/my-profile">My Profile</Link>
-              <Link className="navbar-item" onClick={this.logout} to="/">Logout</Link>
+              <Link className="navbar-item" onClick={this.handleLogOut} to="/">Logout</Link>
             </div>
           </div>
         </div>

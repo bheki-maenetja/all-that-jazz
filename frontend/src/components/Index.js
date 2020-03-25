@@ -19,8 +19,6 @@ import MyProfile from './users/MyProfile'
 import ArtistIndex from './artists/ArtistIndex'
 import ArtistShow from './artists/ArtistShow'
 
-import MusicPlayer from './musicPlayer/MusicPlayer'
-
 import SongIndex from './songs/SongIndex'
 
 class Index extends React.Component {
@@ -28,7 +26,8 @@ class Index extends React.Component {
   state = {
     isSongPlaying: false,
     currentSong: null,
-    isPreview: false
+    isPreview: false,
+    isLoggedIn: false
   }
 
   previewSong = songObj => {
@@ -43,13 +42,21 @@ class Index extends React.Component {
     this.setState({ isSongPlaying: false, currentSong: null })
   }
 
+  logout = () => {
+    this.setState({ isLoggedIn: false })
+  }
+
+  login = () => {
+    this.setState({ isLoggedIn: true })
+  }
+
   render() {
-    const { currentSong, isSongPlaying, isPreview } = this.state
+    const { currentSong, isSongPlaying, isPreview, isLoggedIn } = this.state
     return (
       <>
       <BrowserRouter>
       <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        {Authorize.isAuthenticated() &&
+        {isLoggedIn &&
           <> 
           <AudioHandler 
             isSongPlaying={isSongPlaying}
@@ -57,15 +64,15 @@ class Index extends React.Component {
             endSong={this.endSong}
             isPreview={isPreview}
           />
-          <Navbar />
+          <Navbar logout={this.logout} />
           <Notifications />
           </>
         }
         <Switch>
           <Route exact path="/" component={TitlePage} />
           <Route path="/home" component={HomePage} />
-          <Route path="/register" component={UserAuth} />
-          <Route path="/login" component={UserAuth} />
+          <Route path="/register" render={(props) => <UserAuth {...props} login={this.login} />} />
+          <Route path="/login" render={(props) => <UserAuth {...props} login={this.login} />} />
           <Route path="/my-profile">
             <MyProfile playSong={this.playSong} />
           </Route>
@@ -74,7 +81,6 @@ class Index extends React.Component {
           </Route>
           <Route path="/artists/:id" component={ArtistShow} />
           <Route path="/artists" component={ArtistIndex} />
-          <Route path="/music-player" component={MusicPlayer} />
           <Route path="/*" component={ErrorPage} />
         </Switch>
       </div>

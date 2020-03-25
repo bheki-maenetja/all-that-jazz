@@ -54,6 +54,8 @@ class UserAuth extends React.Component {
       const res = await axios.post('/api/users/login/', this.state.loginData)
       Authorize.setToken(res.data.token)
       this.props.history.push('/home')
+      const { login } = this.props
+      login()
     } catch (err) {
       console.log('SOMETHING IS VERY WRONG!!!\n', err)
       this.setState({ error: err.response.data.message })
