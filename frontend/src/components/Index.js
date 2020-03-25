@@ -56,7 +56,7 @@ class Index extends React.Component {
       <>
       <BrowserRouter>
       <div style={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
-        {isLoggedIn &&
+        {Authorize.isAuthenticated() &&
           <> 
           <AudioHandler 
             isSongPlaying={isSongPlaying}
