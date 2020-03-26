@@ -43,7 +43,7 @@ class Index extends React.Component {
   }
 
   logout = () => {
-    this.setState({ isLoggedIn: false })
+    this.setState({ isLoggedIn: false, isSongPlaying: false, currentSong: null, isPreview: false })
   }
 
   login = () => {
