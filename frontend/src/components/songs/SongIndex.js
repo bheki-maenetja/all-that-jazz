@@ -134,7 +134,7 @@ class SongIndex extends React.Component {
           dynamicHeight={true}
           onChange={this.changeSongs}
         >
-          <div className="hero is-info is-medium">
+          <div className="hero is-info is-medium" style={{ height: '100%' }}>
             <div className="hero-body">
               <h1 className="title is-1 has-text-white">Look at all those songs</h1>
               <h2 className="subtitle is-2 has-text-white">Subheading</h2>

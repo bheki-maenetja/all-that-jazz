@@ -23,9 +23,9 @@ const SongItem = ({ song, playSong, getLikeStatus, likeSong, unlikeSong }) => (
     <div className="level-right">
       <div className="level-item">
         {getLikeStatus(song) ?
-          <button className="button is-danger" onClick={() => unlikeSong(song.id)}>Unlike</button>
+          <button className="button is-danger" onClick={() => unlikeSong(song.id)}>Remove from Library</button>
           :
-          <button className="button is-info" onClick={() => likeSong(song.id)}>Like</button>
+          <button className="button is-info" onClick={() => likeSong(song.id)}>Add to Library</button>
         }
       </div>
     </div>

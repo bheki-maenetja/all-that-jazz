@@ -28,7 +28,7 @@ const FavouriteSongs = ({ userData, playSong, removeSong }) => (
           </div>
           <div className="level-right">
             <div className="level-item">
-              <button className="button is-danger" onClick={() => removeSong(song.id)}>Unlike</button>
+              <button className="button is-danger" onClick={() => removeSong(song.id)}>Remove</button>
             </div>
           </div>
         </div>

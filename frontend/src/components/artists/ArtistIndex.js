@@ -63,6 +63,7 @@ class ArtistIndex extends React.Component {
                     <figure className="image is-square">
                       <img className="is-rounded" src={art.image_url} alt={art.name} />
                     </figure>
+                    <br />
                     <figcaption className="title is-4 has-text-centered">{art.name}</figcaption>
                   </Link>
                 </div>

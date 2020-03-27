@@ -4,6 +4,8 @@ import Notifications from 'react-notify-toast'
 
 import 'bulma'
 import '@fortawesome/fontawesome-free/css/all.css'
+import 'animate.css'
+import '../stylesheets/main.css'
 
 import Authorize from '../lib/authorize'
 

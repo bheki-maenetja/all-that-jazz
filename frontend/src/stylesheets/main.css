@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo+2:400,500,600,700,800&display=swap');
+
+* {
+  font-family: 'Baloo 2';
+}
+
+button {
+  font-family: 'Baloo 2';
+  font-weight: 900;
+}
+
+.navbar * {
+  font-weight: 900;
+}
+
+.home-page {
+  animation-name: home-page-transitions;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 3px 3px black;
+}
+
+.home-page h1, .home-page h2 {
+  border-radius: 10px;
+  background-color: rgba(0, 0,0, 0.5);
+}
+
+@keyframes home-page-transitions {
+  0%   {background-image: url('https://wallpaperplay.com/walls/full/7/f/1/116392.jpg')}
+  25%  {background-image: url('https://kqennewsradio.com/wp-content/uploads/2019/01/jazz.jpg')}
+  50%  {background-image: url('https://www.ecopetit.cat/wpic/mpic/111-1112270_1920x1080-cool-music-wallpapers-free-royalty-jazz-saxophone.jpg')}
+  75%  {background-image: url('https://i.pinimg.com/originals/ab/29/a2/ab29a2aaf16301d755cec86cdcb7faa9.jpg')}
+  100% {background-image: url('https://wallpaperplay.com/walls/full/7/f/1/116392.jpg')}
+}
