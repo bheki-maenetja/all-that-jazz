@@ -9,6 +9,8 @@ import FavouriteArtists from './FavouriteArtists'
 import MyPlaylists from './MyPlaylists'
 import CreatePlaylist from './CreatePlaylist'
 
+import ProfilePageBackground from '../../assets/profilePageBackground.jpg'
+
 class MyProfile extends React.Component {
 
   state = {
@@ -214,9 +216,9 @@ class MyProfile extends React.Component {
     }
     return (
       <>
-      <section className="section" style={{ flexGrow: '1', overflowY: 'scroll' }}>
+      <section className="section" style={{ flexGrow: '1', overflowY: 'scroll', backgroundImage: `url(${ProfilePageBackground})` }}>
         <div className="columns is-vcentered" style={{ height: '100%' }}>
-          <div className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile" style={{ borderRight: '1px solid lightgrey' }}>
+          <div className="column is-one-quarter-desktop is-one-quarter-tablet is-full-mobile" style={{ backgroundColor: 'rgba(0,0,0,0.7)', padding: '20px', borderRadius: '25px' }}>
             <aside className="menu">
               <div className="container has-text-centered" style={{ display: 'flex', justifyContent: 'center' }}>
               <figure className="image is-128x128">
@@ -224,11 +226,11 @@ class MyProfile extends React.Component {
               </figure>
               </div>
               <br />
-              <h1 className="title is-1 has-text-centered">{userData.first_name + ' ' + userData.last_name}</h1>
-              <h2 className="subtitle is-4 has-text-centered">{userData.alias}</h2>
+              <h1 className="title is-1 has-text-centered has-text-white">{userData.first_name + ' ' + userData.last_name}</h1>
+              <h2 className="subtitle is-4 has-text-centered has-text-white">{userData.alias}</h2>
               <hr />
-              <p className="subtitle is-6">Username: {userData.username}</p>
-              <p className="subtitle is-6">Email: {userData.email}</p>
+              <p className="subtitle is-6 has-text-white has-text-weight-bold">Username: {userData.username}</p>
+              <p className="subtitle is-6 has-text-white has-text-weight-bold">Email: {userData.email}</p>
               <div className="buttons">
                 <button className="button is-info is-fullwidth" onClick={this.changeSections} name="FavouriteSongs">My Songs</button>
                 <button className="button is-primary is-fullwidth" onClick={this.changeSections} name="FavouriteArtists">Favourite Artists</button>

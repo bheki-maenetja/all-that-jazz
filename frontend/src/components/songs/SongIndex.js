@@ -8,6 +8,8 @@ import Authorize from '../../lib/authorize'
 
 import SongItem from './SongItem'
 
+import SongIndexBackground from '../../assets/songIndexBackground.jpg'
+
 class SongIndex extends React.Component {
 
   state = {
@@ -134,10 +136,10 @@ class SongIndex extends React.Component {
           dynamicHeight={true}
           onChange={this.changeSongs}
         >
-          <div className="hero is-info is-medium" style={{ height: '100%' }}>
+          <div className="hero is-primary is-medium" style={{ height: '100%' }}>
             <div className="hero-body">
-              <h1 className="title is-1 has-text-white">Look at all those songs</h1>
-              <h2 className="subtitle is-2 has-text-white">Subheading</h2>
+              <h1 className="title is-1 has-text-white">Songs</h1>
+              <h2 className="subtitle is-3 has-text-white">Explore songs from the greatest jazz artists of the last century</h2>
             </div>
           </div>
           {songCategories.map(cat => (
@@ -151,7 +153,7 @@ class SongIndex extends React.Component {
             </>
           ))}
         </Carousel>
-        <section className="section">
+        <section className="section" style={{ backgroundImage: `url(${SongIndexBackground})` }}>
           <div className="container">
             <form>
               <div className="field has-addons">
@@ -169,16 +171,17 @@ class SongIndex extends React.Component {
               </div>
             </form>
             <br />
-            <div className="level">
+            <div className="level" style={{ backgroundColor: 'rgba(0,0,0, 0.7)', borderRadius: '5px' }}>
               <div className="level-item">
-                <h3 className="title is-3">Name</h3>
+                <h3 className="title is-3 has-text-white" style={{ textShadow: '2px 2px black' }}>Name</h3>
               </div>
               <div className="level-item">
-                <h3 className="title is-3">Artist</h3>
+                <h3 className="title is-3 has-text-white" style={{ textShadow: '2px 2px black' }}>Artist</h3>
               </div>
               <div className="level-item">
-                <h3 className="title is-3">Released</h3>
+                <h3 className="title is-3 has-text-white" style={{ textShadow: '2px 2px black' }}>Released</h3>
               </div>
+              <div className="level-item"></div>
             </div>
             {searchSongs.map(song => (
               <>

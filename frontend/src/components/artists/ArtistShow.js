@@ -85,25 +85,25 @@ class ArtistShow extends React.Component {
     if (!userData) return false
     return (
       <>
-      <section className="section" style={{ flexGrow: '1', overflowY: 'scroll' }}>
+      <section className="section has-background-info" style={{ flexGrow: '1', overflowY: 'scroll' }}>
         <div className="container">
           <div className="columns is-mobile">
             <div className="column is-half is-offset-one-quarter">
               <figure className="image is-square">
-                <img className="is-rounded" src={artistData.image_url} alt={artistData.name} />
+                <img className="is-rounded" src={artistData.image_url} alt={artistData.name} style={{ border: '5px solid white' }} />
               </figure>
               <br />
-              <h1 className="title is-1 has-text-centered">{artistData.name}</h1>
-              <h2 className="subtitle is-4 has-text-centered">{artistData.nickname}</h2>
+              <h1 className="title is-1 has-text-centered has-text-white has-text-weight-bold">{artistData.name}</h1>
+              <h2 className="subtitle is-4 has-text-centered has-text-white has-text-weight-bold">{artistData.nickname}</h2>
               <div className="container has-text-centered">
                 {this.getArtistStatus(artistData.id) ?
-                  <button className="button is-danger" onClick={() => this.unlikeArtist(artistData.id)}>Remove from Favourites</button>
+                  <button className="button is-warning" onClick={() => this.unlikeArtist(artistData.id)}>Remove from Favourites</button>
                   :
-                  <button className="button is-info" onClick={() => this.likeArtist(artistData.id)}>Add to Favourites</button>
+                  <button className="button is-success" onClick={() => this.likeArtist(artistData.id)}>Add to Favourites</button>
                 }
               </div>
               <br />
-              <p className="subtitle is-5 has-text-centered">{artistData.description}</p>
+              <p className="subtitle is-5 has-text-centered has-text-white">{artistData.description}</p>
             </div>
           </div>
         </div>
