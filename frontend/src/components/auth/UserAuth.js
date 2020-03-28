@@ -74,15 +74,15 @@ class UserAuth extends React.Component {
     const { uploadedImage } = this.state
     return (
       <>
-      <section className="section" style={{ height: '100vh', display: 'flex', alignItems: 'center', overflowY: 'scroll'}}>
+      <section className="section" style={{ height: '100vh', display: 'flex', alignItems: 'center', overflowY: 'scroll', backgroundImage: `url(https://www.jazzireland.ie/images/blog/kind-of-blue-orchestrated.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="container" style={{ height: '100%' }}>
           <div className="columns is-vcentered" style={{ height: '100%' }}>
             {this.props.location.pathname === '/register' && 
               <>
-              <form className="column is-half is-offset-one-quarter" style={{ height: '100%' }}>
-                <h2 className="title is-2 has-text-centered">Register</h2>
+              <form className="column is-half is-offset-one-quarter" style={{ height: '100%', backgroundColor: 'rgba(0,0,0,0.5)', padding: '20px', borderRadius: '15px' }}>
+                <h2 className="title is-2 has-text-centered has-text-white">Register</h2>
                 <div className="field">
-                  <label className="label">First Name</label>
+                  <label className="label has-text-white">First Name</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -96,7 +96,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Last Name</label>
+                  <label className="label has-text-white">Last Name</label>
                   <div className="control">
                     <input
                       type="text"
@@ -110,7 +110,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label light-text-body">Alias</label>
+                  <label className="label has-text-white">Alias</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -124,7 +124,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className={`label ${this.state.errors.profile_image ? 'has-text-danger' : ''}`}>Profile Image</label>
+                  <label className="label has-text-white">Profile Image</label>
                   <div className="control">
                   { uploadedImage ?
                     <>
@@ -148,7 +148,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Username</label>
+                  <label className="label has-text-white">Username</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -162,7 +162,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Email</label>
+                  <label className="label has-text-white">Email</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -176,7 +176,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Password</label>
+                  <label className="label has-text-white">Password</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -190,7 +190,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Password Confirmation</label>
+                  <label className="label has-text-white">Password Confirmation</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -205,11 +205,11 @@ class UserAuth extends React.Component {
                 </div>
                 <div className="field">
                   <div className="control">
-                    <button className="button is-warning is-fullwidth" onClick={this.registerUser}>Submit</button>
+                    <button className="button is-info is-fullwidth" onClick={this.registerUser}>Submit</button>
                   </div>
                   <br />
                   <div className="container">
-                    <p className="has-text-centered">Already have an account? <Link to="/login">Login</Link></p>
+                    <p className="has-text-centered has-text-white has-text-weight-bold">Already have an account? <Link to="/login" className="has-text-warning">Login</Link></p>
                   </div>
                 </div>
               </form>
@@ -217,10 +217,10 @@ class UserAuth extends React.Component {
             }
             {this.props.location.pathname === '/login' &&
               <>
-              <form className="column is-half is-offset-one-quarter">
-                <h2 className="title is-2 has-text-centered">Login</h2>
+              <form className="column is-half is-offset-one-quarter" style={{ backgroundColor: 'rgba(0,0,0,0.5)', padding: '20px', borderRadius: '25px' }}>
+                <h2 className="title is-2 has-text-centered has-text-white">Login</h2>
                 <div className="field">
-                  <label className="label">Email</label>
+                  <label className="label has-text-white">Email</label>
                   <div className="control">
                     <input 
                       type="text"
@@ -233,7 +233,7 @@ class UserAuth extends React.Component {
                   </div>
                 </div>
                 <div className="field">
-                  <label className="label">Password</label>
+                  <label className="label has-text-white">Password</label>
                   <div className="control">
                     <input 
                       type="password" 
@@ -247,11 +247,11 @@ class UserAuth extends React.Component {
                 </div>
                 <div className="field">
                   <div className="control">
-                    <button className="button is-info is-fullwidth" onClick={this.loginUser}>Login</button>
+                    <button className="button is-primary is-fullwidth" onClick={this.loginUser}>Login</button>
                   </div>
                   <br />
                   <div className="container">
-                    <p className="has-text-centered">Don't have an account? <Link to="/register">Register</Link></p>
+                    <p className="has-text-centered has-text-white has-text-weight-bold">Don't have an account? <Link to="/register" className="has-text-warning">Register</Link></p>
                   </div>
                 </div>
               </form>

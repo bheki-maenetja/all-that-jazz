@@ -13,22 +13,22 @@ class TitlePage extends React.Component {
   render() {
     return (
       <>
-      <section className="hero is-fullheight is-info">
+      <section className="hero is-fullheight is-info" style={{ backgroundImage: `url(https://media.giphy.com/media/ukk70PDTAXmRa/giphy.gif)`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="hero-body">
-          <div className="container">
+          <div className="container" style={{ backgroundColor: 'rgba(0,0,0,0.7)', padding: '20px', borderRadius: '25px', width: 'fit-content' }}>
             <h1 className="title is-1 has-text-centered">Welcome to the World of Jazz!</h1>
-            <br />
+            {/* <br /> */}
             <div className="container">
               <div className="columns is-multiline">
                 <div className="column is-one-quarter"></div>
                 <div className="column is-one-quarter">
                   <Link to="/login">
-                    <TitlePageCard name={'Login'} imageURL={LoginCardImg} />
+                    <button className="button is-primary is-fullwidth is-large">Login</button>
                   </Link>
                 </div>
                 <div className="column is-one-quarter">
                   <Link to="/register">
-                    <TitlePageCard name="Register" imageURL={RegisterCardImg} />
+                    <button className="button is-info is-fullwidth is-large">Register</button>
                   </Link>
                 </div>
               </div>
