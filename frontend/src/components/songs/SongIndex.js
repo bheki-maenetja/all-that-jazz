@@ -146,8 +146,8 @@ class SongIndex extends React.Component {
             <>
             <div className="hero is-medium" style={{backgroundImage: `url(${cat.image_url})`, backgroundPosition: 'center', backgroundSize: 'cover'}}>
               <div className="hero-body">
-                <h1 className="title is-1 has-text-white">{cat.name}</h1>
-                <h2 className="subtitle is-2 has-text-white">{cat.description}</h2>
+                <h1 className="title is-1 has-text-white" style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: '10px' }}>{cat.name}</h1>
+                <h2 className="subtitle is-2 has-text-white" style={{ backgroundColor: 'rgba(0,0,0,0.5)', borderRadius: '10px' }}>{cat.description}</h2>
               </div>
             </div>
             </>
