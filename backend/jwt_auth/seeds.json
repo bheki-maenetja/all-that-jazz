@@ -1,0 +1,87 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$VvRfINFiMAz4$BuC1yAoHIc6DFPqIwC7/UgnCU3rvu3G8nXM8IOTlJkQ=",
+    "last_login": "2020-03-20T06:01:39.569Z",
+    "is_superuser": true,
+    "username": "admin",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2020-03-10T16:40:24Z",
+    "email": "admin@email.com",
+    "first_name": "The",
+    "last_name": "Administrator",
+    "alias": "The One-Above-All",
+    "profile_image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAkFBMVEX///+23P5HiMc4gcTK2eyjzPNEhsa74P8xfsO63/8/g8RBhcb1+Ps2gMSZuNw3gcSy2fxim9N9r+CPvem0y+Ws1PlRj8uJuOZpoNbl7fajwOCfyvJil85alc+KueasxuN8ptTb5vPR3++/0+lupNl+qNWJr9js8vng6vWfvd9/sOFpm9CPs9pyp9vD1uvB5v/Pl2VMAAARDElEQVR4nO1d6Xbqug4ucXESGwNlCJShUKAjtPv93+4mkp04IUAGB8O51Y+91m5p8BfJmixLDw9/9Ed/9Ef/Gfr43Gw2j5vN63PH9lJM0+f2a710PE+IHiFECOHxxXr1antZZqiz+doTQRh3qKMRpZwJsV992F5fTeps1z3BUtBSRIlYP9peZA3a7j3CT6KTxEXwa3uh1agzc4jOPBoJJmdInOq/Eo",
+    "groups": [],
+    "user_permissions": [],
+    "favourite_songs": [],
+    "favourite_artists": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$Xe1LvZ0lNan6$SKwG8sspxlN8UximYiTDELFlPcyuLkNYDS1SMsloQ+4=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user1",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-10T16:55:13Z",
+    "email": "user1@email.com",
+    "first_name": "First",
+    "last_name": "User",
+    "alias": "Number One",
+    "profile_image": "https://d1nz104zbf64va.cloudfront.net/dt/a/o/top-5-jazz-musicians-you-need-to-listen.png",
+    "groups": [],
+    "user_permissions": [],
+    "favourite_songs": [
+      1,
+      2,
+      3,
+      9,
+      11,
+      12,
+      17,
+      18,
+      23,
+      27,
+      30,
+      24,
+      29,
+      53
+    ],
+    "favourite_artists": [
+      2,
+      3,
+      5
+    ]
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$150000$IIqgnQsg4NbN$5bhXdKv1PUVCIsWFODKDW6CNZBxTvbht5t2XvMo3VaY=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "user2",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2020-03-15T14:44:23.254Z",
+    "email": "user2@email.com",
+    "first_name": "The Second",
+    "last_name": "User",
+    "alias": "",
+    "profile_image": "http://res.cloudinary.com/dyed10v2u/image/upload/v1584283406/upload_demo/l7ngttlqupk4gaxir0rc.jpg",
+    "groups": [],
+    "user_permissions": [],
+    "favourite_songs": [],
+    "favourite_artists": []
+  }
+}
+]

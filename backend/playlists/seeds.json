@@ -1,0 +1,44 @@
+[
+{
+  "model": "playlists.playlist",
+  "pk": 2,
+  "fields": {
+    "name": "Frank & Ella",
+    "description": "The greatest collaboration to never happen",
+    "owner": 2,
+    "songs": [
+      1,
+      3
+    ]
+  }
+},
+{
+  "model": "playlists.playlist",
+  "pk": 3,
+  "fields": {
+    "name": "Out on the Town",
+    "description": "Songs about the great cities of the world",
+    "owner": 2,
+    "songs": [
+      2,
+      12,
+      23,
+      30
+    ]
+  }
+},
+{
+  "model": "playlists.playlist",
+  "pk": 5,
+  "fields": {
+    "name": "Slow Jam Jazz",
+    "description": "Soft, smooth & soothing",
+    "owner": 2,
+    "songs": [
+      9,
+      11,
+      27
+    ]
+  }
+}
+]

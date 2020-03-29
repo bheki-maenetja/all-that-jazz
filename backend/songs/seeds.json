@@ -4,7 +4,8 @@
   "pk": 1,
   "fields": {
     "name": "Love",
-    "description": "The perfect music for a romantic setting"
+    "description": "The perfect music for a romantic setting",
+    "image_url": "https://www.freevector.com/uploads/vector/preview/18969/33.jpg"
   }
 },
 {
@@ -12,7 +13,8 @@
   "pk": 2,
   "fields": {
     "name": "Swing & Dance",
-    "description": "Get up and dance all night with these swingin' tunes"
+    "description": "Get up and dance all night with these swingin' tunes",
+    "image_url": "https://swingdancesurrey.com/WP/wp-content/uploads/2019/03/Cartoon-Swing-Photo.jpg"
   }
 },
 {
@@ -20,7 +22,8 @@
   "pk": 3,
   "fields": {
     "name": "Sad & Lonely",
-    "description": "For those days when the sky is grey and life is no thrill"
+    "description": "For those days when the sky is grey and life is no thrill",
+    "image_url": "https://miro.medium.com/max/11520/0*b_4YwpjLJDM5uZE7"
   }
 },
 {
@@ -28,7 +31,8 @@
   "pk": 4,
   "fields": {
     "name": "Soft & Gentle",
-    "description": "Smooth tunes that soothe the soul"
+    "description": "Smooth tunes that soothe the soul",
+    "image_url": "https://i.ytimg.com/vi/y-lJcNRGcqs/maxresdefault.jpg"
   }
 },
 {
@@ -36,7 +40,8 @@
   "pk": 5,
   "fields": {
     "name": "Fun",
-    "description": "Music that bops"
+    "description": "Music that bops",
+    "image_url": "https://i.ytimg.com/vi/sokABMo1S8U/maxresdefault.jpg"
   }
 },
 {
@@ -44,7 +49,8 @@
   "pk": 6,
   "fields": {
     "name": "Inspiring",
-    "description": "Music that lifts you up even when you're down"
+    "description": "Music that lifts you up even when you're down",
+    "image_url": "https://www.udiscovermusic.com/wp-content/uploads/2019/04/best-jazz-songs.jpg"
   }
 },
 {
@@ -135,8 +141,8 @@
     "release_year": 1956,
     "artist": 2,
     "categories": [
-      3,
-      4
+      4,
+      3
     ]
   }
 },
@@ -292,8 +298,8 @@
     "artist": 3,
     "categories": [
       1,
-      3,
-      4
+      4,
+      3
     ]
   }
 },
@@ -418,8 +424,8 @@
     "release_year": 1966,
     "artist": 3,
     "categories": [
-      3,
-      6
+      6,
+      3
     ]
   }
 },
@@ -466,8 +472,8 @@
     "release_year": 1957,
     "artist": 3,
     "categories": [
-      3,
-      4
+      4,
+      3
     ]
   }
 },
@@ -529,8 +535,509 @@
     "artist": 3,
     "categories": [
       1,
-      3,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 32,
+  "fields": {
+    "name": "My Baby Just Cares for Me",
+    "lyrics": "My baby don't care for shows My baby don't care for clothes My baby just cares for me My baby don't care for cars and races My baby don't care for high-tone places Liz Taylor is not his style And even Lana Turner's smile Is somethin' he can't see My baby don't care who knows My baby just cares for me Baby, my baby don't care for shows And he don't even care for clothes He cares for me My baby don't care For cars and races My baby don't care for He don't care for high-tone places Liz Taylor is not his style And even Liberace's smile Is something he can't see Is something he can't see I wonder what's wrong with baby My baby just cares for My baby just cares for My baby just cares for me",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225114/upload_songs_NinaSimone/01_My_Baby_Just_Cares_for_Me_ucosp4.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-9.dzcdn.net\\/stream\\/c-919759a869a4c84fa16c8348713d16ce-4.mp3",
+    "release_year": 1958,
+    "artist": 4,
+    "categories": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 33,
+  "fields": {
+    "name": "Summertime",
+    "lyrics": "Summertime and the livin's easy Fish are jumpin', and the cotton is high Oh, yo' daddy's rich and yo' ma is good lookin' So hush, little baby, don' yo' cry One of these mornin's you goin' to rise and singin' Then you'll spread yo' wings an' you'll take the sky But till that mornin', there's a-nothin' can harm you With daddy and mammy standin' by",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225114/upload_songs_NinaSimone/10_Summertime_hh7bgf.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-128c19d017e9803c97df6f3fc1fd9f9e-2.mp3",
+    "release_year": 1959,
+    "artist": 4,
+    "categories": [
       4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 34,
+  "fields": {
+    "name": "Mood Indigo",
+    "lyrics": "You ain't never been blue; no, no, no, You ain't never been blue, Till you've had that mood indigo. That feelin' goes stealin' down to my shoes While I just sit here and sigh, \"Go 'long blues\". I always get that mood indigo, Since my baby said goodbye. And in the evenin' when the lights are low, I'm so lonely I could cry. 'Cause there's nobody who cares about me, I'm just a poor fool that's bluer than blue can be. When I get that mood indigo, I could lay me down and die. You ain't never been blue; no, no, no, You ain't never been blue, Till you've had that mood indigo. That feelin' goes stealin' down to my shoes While I just sit here and sigh, \"Go 'long blues\".",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225089/upload_songs_NinaSimone/11_Mood_Indigo_c6dyyr.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-3.dzcdn.net\\/stream\\/c-343cb86168f0c96f275a3bcfa874bd50-6.mp3",
+    "release_year": 1958,
+    "artist": 4,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 35,
+  "fields": {
+    "name": "Something to Live For",
+    "lyrics": "I have almost ev'ry thing a human could desire, Cars and houses, bear-skin rugs to lie before my fire But there's something missing, Something isn't there, It seems I'm never kissing the one whom I care for. I want Something To Live For Someone to make my life an adventurous dream Oh, what wouldn't I give for Someone who'd take my life And make it seem gay as they say it ought to be. Why can't I have love like that brought to me? My eye is watching the noon crowds Searching the promenades seeking a clue To the one who will someday be my Something To Live For. I want Something To Live For Someone to make my life an adventurous dream Oh, what wouln't I give for Someone who'd take my life And make it seem gay as they say it ought to be. Why can't I have love like that brought to me? My eye is watching the noon crowds Searching the promenades seeking a clue To the one who will someday be my Something To Live For.",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225081/upload_songs_NinaSimone/82_Something_to_Live_for_fcxl1b.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-f.dzcdn.net\\/stream\\/c-fec462b8b46a757170b67f73362aac60-0.mp3",
+    "release_year": 1962,
+    "artist": 4,
+    "categories": [
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 36,
+  "fields": {
+    "name": "I Like the Sunrise",
+    "lyrics": "I like the sunrise cos it brings a new day I like the new day it brings new hope they say I like the sunrise blazing in the new sky Nighttime's so weary and oh so am I Every evening I wish upon a star That my brand new tomorrow isn't very far When that heavy blue curtain on night Is high in the sky way out of sight I like the sunrise so heavenly to see I like the sunrise and I hope it likes poor me",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225092/upload_songs_NinaSimone/83_I_Like_the_Sunrise_rmau3z.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-1dce91cab1d854735494ca637a3fb85d-0.mp3",
+    "release_year": 1962,
+    "artist": 4,
+    "categories": [
+      6
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 37,
+  "fields": {
+    "name": "He Needs Me",
+    "lyrics": "He needs me He doesn't know it, but he needs me And so no matter where he goes Though he doesn't care He knows that I'm here He needs me I ought to leave him, but he needs me I know that I ain't very bright Just to tag along Oh, but right or wrong I'm his and I'm here And I'm gonna be his friends or his lover Cause my one ambition is To wake him and make him discover That he needs me Ive got to follow where he leads me Or else hell never know that I need him Just as he needs me",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225087/upload_songs_NinaSimone/84_He_Needs_Me_ll2mc0.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-a.dzcdn.net\\/stream\\/c-ab1e055911ca856f763b95b746171d3f-2.mp3",
+    "release_year": 1958,
+    "artist": 4,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 38,
+  "fields": {
+    "name": "I Love You Porgy",
+    "lyrics": "I loves you, Porgy Don't let him take me Don't let him handle me and drive me mad If you can keep me I wanna stay here with you forever and I'll be glad Yes, I loves you, Porgy Don't let him take me Don't let him handle me with his hot hands If you can keep me I wants to stay here with you forever I've got my man I love you, Porgy Don't let him take me Don't let him handle me and drive me mad If you can keep me I wanna stay here with you forever I've got my man Someday I know he's coming to call me He's going to handle me and hold me soon He's going to be like dying, Porgy When he calls me But when he comes I know I'll have to go I love you, Porgy Don't let him take me Honey, don't let him handle me and drive me mad If you can keep me I wanna stay here with you forever I've got my man",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225122/upload_songs_NinaSimone/85_I_Love_You_Porgy_eviurj.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-1e7344debe0b9377d3fff894e78633b5-1.mp3",
+    "release_year": 1958,
+    "artist": 4,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 39,
+  "fields": {
+    "name": "He was Too Good to Me",
+    "lyrics": "He was too good to me how can I get along now So close he stood to me Everything is all messed up and wrong now My baby would have brought me the sun Cos making me smile that was his fun When I was mean to him he didn't say go away now You see I was his queen to him Who's gonna make me gay now It's only natural that I'm blue Cos my baby was too good to be true I said he was too good to me how am I ever get along now So close he stood to me Everything's all messed up and wrong now He would have brought me the sun and the moon Cos anytime I left him it was too soon When I was mean to him he didn't say go away now I was his queen to him who's gonna make me gay now It's only natural said it's only natural that I'm so blue He was too good to be true",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225113/upload_songs_NinaSimone/135_He_Was_Too_Good_to_Me_tml4yz.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-2.dzcdn.net\\/stream\\/c-2c805419570ac687c91bf11687288054-1.mp3",
+    "release_year": 1962,
+    "artist": 4,
+    "categories": [
+      1,
+      4,
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 40,
+  "fields": {
+    "name": "Exactly Like You",
+    "lyrics": "I know why I waited Know why I've been blue I've been waiting each day For someone exactly like you Why should I spend some money On a show or two When nobody sings these love songs Exactly like you You make me feel so grand I wanna give this world to you You make me understand These foolish little dreams I'm dreaming And schemes I'm scheming Now I know why my mama She taught me to be true She knew just around the corner Was somebody like you You make me feel so grand I wanna give this world to you Baby you make me understand These foolish little dreams I'm dreaming And schemes I'm scheming Now I know why my mama She taught me to be true She knew just around the corner Yes she knew just around the corner Was somebody like you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225101/upload_songs_NinaSimone/136_Exactly_Like_You_fc0pyy.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-2.dzcdn.net\\/stream\\/c-22b47d266d74314169eccffe36c3a89d-3.mp3",
+    "release_year": 1959,
+    "artist": 4,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 41,
+  "fields": {
+    "name": "Forbidden Fruit",
+    "lyrics": "Eve and Adam had a garden everything was great Till one day a boy says pardon Miss my name is snake See that apple over yonder if you'll take a bite You and Adam both are bound to have some fun tonight Go on and eat forbidden fruit It's mighty sweet forbidden fruit It's quite a treat forbidden fruit Go ahead and taste it you don't wanna waste it The Lord had said in the beginning everything is free Except that apple that leads to sinning so let that apple be But Eve got tempted so she tried it and as all chicks do Teaser her man till he decided he'd just try some too Go on and eat forbidden fruit It's mighty sweet forbidden fruit It's quite a treat forbidden fruit Go ahead and bite it I bet you'd be delighted I hate to tell you all what followed the Lord was most upset Saw them making love and hollered what have you to add And when they made a full confession the Lord said hm I see I guess I'll have to teach you a lesson about not minding me Go on and eat forbidden fruit It's mighty sweet forbidden fruit It's quite a treat forbidden fruit You're all indebted now you gonna get it The Lord made Eve Adam's madam have his kids and all Placed some labour laws on Adam and he made the snake to fall Ever since the days of Eden folks been sinful my Nowadays they're even eating apples in their pie Go on and eat forbidden fruit It's mighty sweet forbidden fruit It's quite a treat forbidden fruit Go ahead and taste it you don't wanna waste it Oh go ahead and bite it I bet you'd be delighted You always did it now you'll gonna get it Forbidden fruit",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225106/upload_songs_NinaSimone/137_Forbidden_Fruit_ppoxu4.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-d.dzcdn.net\\/stream\\/c-d59647a04a9bb9a542b7dfcdef85b1d8-2.mp3",
+    "release_year": 1961,
+    "artist": 4,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 42,
+  "fields": {
+    "name": "Central Park Blues",
+    "lyrics": "Like a flower waiting to bloom Like a light bulb in a dark room I am here waitin' for you to come on home And turn me on Like the desert waitin' for rain Like a school kid waitin' for spring I am sittin' here waitin' for you to come on back home And turn me on My poor heart, it's been so dark Since you've been gone After all you're the one that turned me off Now you're the only one that can turn me back on, uh My hi-fi's waitin' for a new tune And my glass is waitin' for some fresh ice cubes I'm just sittin' here waitin' for you to come home And turn me on",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225121/upload_songs_NinaSimone/138_Central_Park_Blues_e4htam.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-f.dzcdn.net\\/stream\\/c-f7a63914eb854ac4bd73853d904dffd1-2.mp3",
+    "release_year": 1958,
+    "artist": 4,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 43,
+  "fields": {
+    "name": "Do Nothing Till you Hear from Me",
+    "lyrics": "Someone told someone and someone told you But they wouldn't hurt you, not much Since everyone spread the story With his own little personal touch Do nothin' till you hear from me Pay no attention to what's said Why people tear the seam of anyone's dream Is over my head Do nothin' till you hear from me At least consider our romance If you should take the word of others you've heard I haven't a chance True I've been seen with someone new But does that mean that I'm untrue When we're apart the words in my heart Reveal how I feel about you Some kiss may cloud my memory And other arms may hold a thrill But please do nothin' till you hear it from me And you never will Do nothin' till you hear from me Do nothin' till you hear from me Pay no attention to what's said Why people tear the seam of anyone's dream Is over my head Do nothin' till you hear from me At least consider our romance If you should take the word of others you've heard I haven't a chance True I've been seen with someone new But does that mean that I'm untrue When we're apart the words in my heart Reveal how I feel about you Some kiss may cloud my memory And other arms may hold a thrill But please do nothin' till you hear it from me And you never will",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585225124/upload_songs_NinaSimone/139_Do_Nothin_Till_You_Hear_from_Me_ldndum.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-b.dzcdn.net\\/stream\\/c-ba4082a0823953af7c2f49af712b63e9-2.mp3",
+    "release_year": 1962,
+    "artist": 4,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 44,
+  "fields": {
+    "name": "Georgia On My Mind",
+    "lyrics": "Georgia Georgia The whole world through Just an old sweet song keeps Georgia on my mind Georgia on my mind Georgia, ah Georgia A song of you Comes a sweet and clear as moonlight through the pines  Other arms reach out to me Other eyes smile oh so tenderly Still in peaceful dreams I see the road leads back to you Georgia, ah Georgia No peace I find Just an old sweet song keeps Georgia on my mind  Georgia, ah Georgia No peace I find Just a old sweet song keeps Georgia on my mind  Georgia on my mind",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227473/upload_songs_DeanMartin/16_Georgia_On_My_Mind_ybqpwq.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-7.dzcdn.net\\/stream\\/c-7284ad9fce323911cabc86e53d5e2266-2.mp3",
+    "release_year": 1955,
+    "artist": 5,
+    "categories": [
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 45,
+  "fields": {
+    "name": "Sway",
+    "lyrics": "When marimba rhythms start to play Dance with me, make me sway Like a lazy ocean hugs the shore Hold me close, sway me more Like a flower bending in the breeze Bend with me, sway with ease When we dance you have a way with me Stay with me, sway with me Other dancers may be on the floor Dear, but my eyes will see only you Only you have the magic technique When we sway I go weak I can hear the sounds of violins Long before it begins Make me thrill as only you know how Sway me smooth, sway me now Other dancers may be on the floor Dear, but my eyes will see only you Only you have the magic technique When we sway I go weak I can hear the sounds of violins Long before it begins Make me thrill as only you know how Sway me smooth, sway me now You know how Sway me smooth, sway me now",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227472/upload_songs_DeanMartin/19_Sway_o9gdci.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-17f5e6bfe6c0705832699c135088502f-2.mp3",
+    "release_year": 1954,
+    "artist": 5,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 46,
+  "fields": {
+    "name": "Mambo Italiano",
+    "lyrics": "Hey mambo, mambo Italiano hey hey mambo mambo Italiano Go go go you mixed up Siciliano All you Calabrese do the mambo like-a crazy with the Hey mabo don't wanna tarantella Hey mambo no more mozzarella Hey mambo mambo Italiano try an enchilada with a fish baccala Hey goomba I love how you dance the rumba But take some advice paisano learn-a how to mambo If you're gonna be a square you ain't-a gonna go anywhere Hey mambo mambo Italiano hey hey mambo mambo Italiano Go go Joe shake like a tiavanna E lo che se dice you get happy in the pizza when you Mambo Italiano Hey chadrool you don't-a have to go to school Just make it with a big bambino It's like vino Kid you good-a looking but you don't-a know what's cooking 'til you Hey mambo mambo Italiano Hey hey mambo mambo Italiano Ho ho ho you mixed up Siciliano E lo che se dice you get happy in the pizza when you Mambo Italiano",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227480/upload_songs_DeanMartin/41_Mambo_Italiano_vws8wc.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-17d70ebe682e48989b1693bb23712554-2.mp3",
+    "release_year": 1969,
+    "artist": 5,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 47,
+  "fields": {
+    "name": "Chee Chee-oo Chee",
+    "lyrics": "(Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) Once on a tree top tall a little bird (Chee chee-oo chee, chee chee-oo chee) Sang out the sweetest song I ever heard  (Chee chee-oo chee, chee chee-oo chee) (He sang to me so merrily) (Chee chee-oo chee, chee chee-oo chee) (The little birdie on the tree)  Life's such a lovely thing it seemed to say (Chee chee-oo chee, chee chee-oo chee) If you'd only sing your cares away (Chee chee-oo chee, chee chee-oo chee) Chee chee-oo chee so merrily it went along (Chee chee-oo chee, chee chee-oo chee) Chee chee-oo chee so happily his little song (Chee chee-oo chee, chee chee-oo chee) And so (and so) I sing (I sing) Chee chee-oo chee the happy happy little thing  If you (if you) feel blue (feel blue) Sing chee chee-oo chee and you can be as happy too (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) Sing this happy little song (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) Chee chee-oo chee Chee chee-oo chee it sang to me so merrily (Chee chee-oo chee, chee chee-oo chee) Chee chee-oo chee the little birdie on the tree (Chee chee-oo chee, chee chee-oo chee) (If you feel blue) Sing chee chee-oo chee, chee chee-oo chee and you can be as happy too (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) (Chee chee-oo chee, chee chee-oo chee) Sing this happy little song (Sing chee chee-oo chee, chee chee-oo chee and you can be as happy as can be)",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227467/upload_songs_DeanMartin/140_Chee_Chee-Oo_Chee_tl1eru.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-c.dzcdn.net\\/stream\\/c-c89bc6ec2496e0532b83d9ce6aff05f1-0.mp3",
+    "release_year": 1966,
+    "artist": 5,
+    "categories": [
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 48,
+  "fields": {
+    "name": "Basin Street Blues",
+    "lyrics": "Won't you come along with me To the Mississippi We'll take the boat to the land of dreams Steam down the river down to New Orleans  The band's there to meet us And old friends to greet us Where all the people always meet Heaven on earth they call it Basin Street  Basin Street is the street Where the elite always meet In New Orleans the land of dreams You'll never know how nice it seems or just how much it really means  Glad to be oh yessiree Where welcome's free are dear to me Where I can lose My Basin Street blues  Glad to be oh yessiree Where welcome's free are dear to me Where I can lose My Basin Street blues  Ain't you glad you came with me Way down to the Mississippi We took the boat to the land of dreams Steam down the river to New Orleans",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227464/upload_songs_DeanMartin/141_Basin_Street_Blues_tumrcs.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-a.dzcdn.net\\/stream\\/c-a81a326a058a875fb831d877717d19a6-3.mp3",
+    "release_year": 1955,
+    "artist": 5,
+    "categories": [
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 49,
+  "fields": {
+    "name": "Innamorata",
+    "lyrics": "If our lips should meet in Innamorata Kiss me, kiss me sweet in Innamorata Hold me close and say you're mine With a love that's warm as wine  I'm at heaven's door in Innamorata Want you more and more in Innamorata You're a symphony, the very beautiful sonata my Innamorata Say that you're my sweetheart, my love  You're a symphony, the very beautiful sonata my Innamorata Say that you're my sweetheart, my one and only sweetheart Say you're my sweetheart, my love",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227470/upload_songs_DeanMartin/142_Innamorata_un6qsl.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-13cb6c4ff3bca2c4802ce58261fef5e8-2.mp3",
+    "release_year": 1968,
+    "artist": 5,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 50,
+  "fields": {
+    "name": "My One, My Only, My All",
+    "lyrics": "See it in your smile I hear it in your sigh That we have found a feeling higher than high My own, my only, my all Kindled by your kiss, the warmth of your embrace The luster of a love-light, lighting your face My own, my only, my all Knock on wood as well I should For all that you're making of me Never thought you'd love me But you do, you do And when I look up at the stars And ask them all what's new They join me in the answer, darling, it's you My own, my only, my all Knock on wood as well I should For all that you're making of me Never thought you'd love me But you do, you do And when I look up at the stars And ask them all what's new They join me in the answer, darling it's you My own, my only, my own one and only My own, my only, my all",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227475/upload_songs_DeanMartin/144_My_One_My_Only_My_All_k0i9e2.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-6.dzcdn.net\\/stream\\/c-6e537942f864161e8d2621270ec673a3-3.mp3",
+    "release_year": 1953,
+    "artist": 5,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 51,
+  "fields": {
+    "name": "Caroline in the Morning",
+    "lyrics": "Nothing could be finer than to be in Carolina in the morning No one could be sweeter than my sweetie when I meet her in the morning Where the morning glories twine around the door Whispering pretty stories I long to hear once more Strolling with my girlie where the dew is pearly early in the morning Butterflies all flutter up and kiss each buttercup at dawning If I had Aladdin's lamp for only a day I'd make a wish and here's what I'd say Nothing could be finer than to be in Carolina in the morning Where the morning glories twine around the door Whispering pretty stories I long to hear once more Strolling with my girlie where the dew is pearly early in the morning Butterflies all flutter up and kiss each buttercup at dawning If I had Aladdin's lamp for only a day I'd make a wish and here's what I'd say Nothing could be finer than to be in Carolina in the a.m. Carolina in the morning",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227481/upload_songs_DeanMartin/145_Caroline_in_the_Morning_c9b19p.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-2.dzcdn.net\\/stream\\/c-24e7a8ab68e08420e27ee39495ad1ac8-3.mp3",
+    "release_year": 1955,
+    "artist": 5,
+    "categories": [
+      1,
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 52,
+  "fields": {
+    "name": "Under the Bridges of Paris",
+    "lyrics": "How would you like to be Down by the Seine with me Oh what I'd give for a moment or two Under the bridges of Paris with you  Darling I'd hold you tight Far from the eyes of night Under the bridges of Paris with you I'd make your dreams come true  (How would you like to be Down by the Seine with me Oh what I'd give for a moment or two Under the bridges of Paris with you)  Darling I'd hold you tight Far from the eyes of night Under the bridges of Paris with you I'd make your dreams come true",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227501/upload_songs_DeanMartin/146_Under_the_Bridges_of_Paris_dosipu.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-4.dzcdn.net\\/stream\\/c-40db4c6e491571bc06f7be2f2068a96f-3.mp3",
+    "release_year": 1969,
+    "artist": 5,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 53,
+  "fields": {
+    "name": "I Want You",
+    "lyrics": "I want the highest star to travel far The things the world has seen And speaking of the things the world has seen I want you  I want a rajah's jewel, a swimming pool The rarest treasures known And speaking of the rarest treasures known I want you  So soft your touch so sweet your kiss So tender are your charms And when my love I hold you near The world is in my arms  I want a rainbow's gold a heart to hold The greatest love of all And speaking of the greatest love of all I want you  So soft your touch so sweet your kiss So tender are your charms And when my love I hold you near The world is in my arms  I want the rainbow's gold a heart to hold The greatest love of all And speaking of the greatest love of all I want you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585227495/upload_songs_DeanMartin/147_I_Want_You_qjux59.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-5.dzcdn.net\\/stream\\/c-51a71f0fe0e74001e683299bfe15f363-3.mp3",
+    "release_year": 1966,
+    "artist": 5,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 54,
+  "fields": {
+    "name": "We Could've Been the Closest of Friends",
+    "lyrics": "There you are and here am I We are what we decided Alone behind a wall of pride Hopelessly divided We had so much together, baby What got into us How could we just call it quits We should have called for love  We could have been the closest of friends We might have been the world's greatest lovers Now we're just without each other We could have been the closest of friends  I could say you did me wrong You could say you didn't Or we could sit and hold our tongues And act like little children I could say you never really loved me And you could say the same But if it's really over then who cares who was to blame  We could have been the closest of friends We might have been the world's greatest lovers Now we're just without each other We could have been the closest of friends  We could have been the closest of friends We might have been the world's greatest lovers Now we're just without each other We could have been the closest of friends",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585471855/upload_songs_SammyDavis/199_We_Could_Have_Been_the_Closet_of_Friends_gckijy.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-8.dzcdn.net\\/stream\\/c-80c7554243dceef4cb117ebf188adccd-2.mp3",
+    "release_year": 1982,
+    "artist": 6,
+    "categories": [
+      3
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 55,
+  "fields": {
+    "name": "What I've Got in Mind",
+    "lyrics": "There's some million things That we could do this evening With all the night life And the silver screen Oh, we got time And we could take the town in Or take the fast cab Baby, down to New Orleans But what I got in mind Is a small cafe, out of the way Oh baby, we won't stay No and be too late What I got mind is to disappear And baby, let's stay right here Oh, to tell the truth What I've got in mind is making love to you Well, I confess then you can find me guilty Yes, I'm a selfish lover, I can't deny But I love you and I don't want to share you With any night lights or darling, any other eyes But what I got in mind Is a small cafe, out of the way Oh baby, we won't stay No, no and be too late What I got mind is to disappear And, baby, let's stay right here Oh, to tell the truth What I've got in mind is making love to you Oh, to tell the truth What I've got in mind is making love to you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585471854/upload_songs_SammyDavis/200_What_I_ve_Got_in_Mind_n4tohc.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-4.dzcdn.net\\/stream\\/c-43e020fb60dc1cce0aeb593ff53f1e93-5.mp3",
+    "release_year": 1982,
+    "artist": 6,
+    "categories": [
+      1,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 56,
+  "fields": {
+    "name": "The Mystery of You",
+    "lyrics": "You smile at me And i'm yours to command I come alive At the touch of your hand And though i try I can't understand The mystery of you. You seem to share Every mood that i feel You're like a dream That's too good To be real Why do i scream In vain To reveal The mystery of you. You have a haunting allure that binds me A magic you alone possess What is this fascination that binds me A willing slave to your caress. You hold me close And the thrill is so new Your lips meet mine And they give me a clue They say in time I'll learn the answer to The mystery of you. You have a haunting allure that binds me A magic you alone possess What is this fascination that binds me A willing slave to your caress. You hold me close And the thrill Is so new Your lips meet mine And they give me a clue They say in time I'll learn the answer to The mystery of you, The mystery of you...",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585472558/upload_songs_ThePlatters/100_The_Mystery_of_You_ss21vr.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-8.dzcdn.net\\/stream\\/c-83ca411379c366ce2c785c85931e797c-2.mp3",
+    "release_year": 1960,
+    "artist": 7,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 57,
+  "fields": {
+    "name": "Heaven on Earth",
+    "lyrics": "Heaven on Earth That's what you've made For me since the day we met Heaven on earth It's all been so thrilling I never can forget, uh-oh Heaven on Earth Alone with an angel Is living in dreams come true Heaven on Earth I know that it happens Only when I'm with you Paradise seemed so far Like a star, it twinkled high above me Now I'm wise paradise Isn't far at all when you're around to love me Love me Oh, Heaven on Earth No need in waiting Waiting until I die Heaven on Earth That's what you've made A Heaven for you and I A Heaven for you and I (For you and I)",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585472555/upload_songs_ThePlatters/101_Heaven_On_Earth_mbpjyz.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-2.dzcdn.net\\/stream\\/c-2041fe206fd181929115dc0a76b6547a-5.mp3",
+    "release_year": 1954,
+    "artist": 7,
+    "categories": [
+      1
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 58,
+  "fields": {
+    "name": "Sixteen Tons",
+    "lyrics": "Some people say man is made out of mud A poor man's made out of muscle and blood Muscle and blood and skin and bone A mind that's a-weak and a back that's strong You load sixteen tons and what do you get Another day older and deeper in debt Saint Peter don't you call me 'cause I can't go I owe my soul to the company store I was born one mornin' when the sun didn't shine I picked up my shovel and I walked to the mine I loaded sixteen tons of number nine coal And the store-boss said the \"Well-a bless my soul\" You load sixteen tons and what do you get Another day older and deeper in debt Saint Peter don't you call me 'cause I can't go I owe my soul to the company store I was born one mornin', it was drizzlin' rain Fightin' and trouble are my middle name I was raised in the cane-brake by an old mama lion Cain't no a high-tone woman make me walk the line You load sixteen tons and what do you get Another day older and deeper in debt Saint Peter don't you call me 'cause I can't go I owe my soul to the company store If you see me comin', better step aside A lot of men didn't and a lot of men died One fist of iron, the other of steel If the right one don't git ya, then the left one will You load sixteen tons and what do you get Another day older and deeper in debt Saint Peter don't you call me 'cause I can't go I owe my soul to the company store",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585472554/upload_songs_ThePlatters/103_Sixteen_Tons_almk2o.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-9.dzcdn.net\\/stream\\/c-983ebe9dede45f88ebb8dfc4df4c1852-7.mp3",
+    "release_year": 1958,
+    "artist": 7,
+    "categories": [
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 59,
+  "fields": {
+    "name": "One in a Million",
+    "lyrics": "There is one in a million like you A dream in a million come true I confess that I really don't know why But I know that I glow like I do Only once in a lifetime is par To find someone rare as you are But now you're around, I have really found That there's one in a million like you Fate was surely kind to help my heart find Someone like you to be my love I give thinks each day that you came my way Way out of heaven to try love Oh yes, once in a lifetime you know A love heaven started below Though it may be rare, you and I do share This love that has happened to few For there's one in a million like you Fate was surely kind to help my heart find Someone like you to be my love I give thanks each day that you came my way Way out of heaven to try love Oh yes, once in a lifetime you know A love heaven started below Though it may be rare, you and I do share This love that has happened to few For there's one in a million like you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585472556/upload_songs_ThePlatters/104_One_in_a_Million_wlohkj.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-d.dzcdn.net\\/stream\\/c-da5127120482cec86199d7b1ac4f7b76-5.mp3",
+    "release_year": 1958,
+    "artist": 7,
+    "categories": [
+      1,
+      6
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 60,
+  "fields": {
+    "name": "Only Because",
+    "lyrics": "Only because you're gentle Only because you're sweet I grow so sentimental Anytime that we meet Only because you're smiling When others seem to frown Strange how my heart keeps smiling Only when you're around The others may bring me excitement It's just for a day I know now for sure What that night meant Our love is here to stay Only because you guide me I give my heart to you Heaven is here beside me Only because of you Others may bring me excitement It's just for a day I know now for sure What that night meant Our love is here to stay Only because you guide me I give my heart to you Heaven is here beside me Only because of you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585472564/upload_songs_ThePlatters/105_Only_Because_afz77w.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-d.dzcdn.net\\/stream\\/c-d1094e648a9977423d6d59f3cd9b1b5a-5.mp3",
+    "release_year": 1957,
+    "artist": 7,
+    "categories": [
+      1,
+      4
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 61,
+  "fields": {
+    "name": "Life Is A Song",
+    "lyrics": "Life is a song, let's sing it together Let's take our hearts, end it then in rhyme Let's learn the words, let's learn the music together Hoping the song lasts for a long, long time  Life is a song that goes on forever Love's old refrain can never go wrong Let's strike the note Mendelssohn wrote concerning spring weather Let's sing it together and make life a song  Let's strike the note Mendelssohn wrote concerning spring weather Let's sing it together and make life a song And make life a great big song",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585473703/upload_songs_ThePlatters/upload_songs_TonyBennett/112_Life_Is_Song_xd7lik.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-1.dzcdn.net\\/stream\\/c-1475621ad4d78af8e33758e39238be28-3.mp3",
+    "release_year": 1962,
+    "artist": 8,
+    "categories": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 62,
+  "fields": {
+    "name": "With Plenty of Money and You",
+    "lyrics": "Well, baby, what I couldn't do With plenty of money and you In spite of the worry that money brings Just a little filthy looker buys a lot of things And I could take you to places that you would like to go But outside of that, I've no use for dough  It's the root of all evil Of strife and upheaval But I'm certain, honey, that life would be sunny With plenty of money and you  It's the root of all evil Of strife and upheaval But I'm certain, honey, that life would be sunny With plenty of money and you",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585473701/upload_songs_ThePlatters/upload_songs_TonyBennett/113_With_Plenty_of_Money_and_You_i5oozr.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-f.dzcdn.net\\/stream\\/c-f847820a39f01658c333960c14cfe3b6-3.mp3",
+    "release_year": 1966,
+    "artist": 8,
+    "categories": [
+      2,
+      5
+    ]
+  }
+},
+{
+  "model": "songs.song",
+  "pk": 63,
+  "fields": {
+    "name": "Poor Little Rich Girl",
+    "lyrics": "Poor little rich girl, you're a bewitched girl You better beware, better beware Laughing at danger, burp to a stranger Better take care, better take care  The life you lead sets all your nerves a jangle Your love affairs are in a hopeless tangle Though you're a child, dear, you're life's a wild typhoon  In life of leisure the graceful pleasures Steadily grows, steadily grows Cocktails and laughter, but what come after Nobody knows, nobody knows  You're weaving love into a mad jazz pattern Ruled by Pantaloon Poor little rich girl Don't drop a stitch too soon  You're weaving love into a mad jazz pattern Ruled by Pantaloon Poor little rich girl Don't drop a stitch too soon",
+    "audio_url": "https://res.cloudinary.com/dyed10v2u/video/upload/v1585473705/upload_songs_ThePlatters/upload_songs_TonyBennett/114_Poor_Little_Rich_Girl_p80skl.mp3",
+    "audio_preview_url": "https:\\/\\/cdns-preview-0.dzcdn.net\\/stream\\/c-051ad2de71ddf7adb20bf5c5b32e8e44-3.mp3",
+    "release_year": 1989,
+    "artist": 8,
+    "categories": [
+      2,
+      5
     ]
   }
 }
