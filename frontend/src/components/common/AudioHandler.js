@@ -31,7 +31,7 @@ const AudioHandler = ({ isSongPlaying, currentSong, endSong, isPreview }) => (
       <>
       <div className="container">
         <div className="title is-1 has-text-centered">
-          <i class="fas fa-music fa-2x animated pulse faster" style={{ color: 'yellow', textShadow: '5px 5px orange', animationIterationCount: 'infinite' }}></i>
+          <i className="fas fa-music fa-2x animated pulse faster" style={{ color: 'yellow', textShadow: '5px 5px orange', animationIterationCount: 'infinite' }}></i>
         </div>
       </div>
       </>

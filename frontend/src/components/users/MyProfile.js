@@ -67,7 +67,7 @@ class MyProfile extends React.Component {
   }
 
   changeSections = (e) => {
-    this.setState({ sectionName: e.target.name })
+    this.setState({ sectionName: e.target.name, currentPlaylist: { songs: [] } })
   }
 
   unlikeSong = async (songId) => {
