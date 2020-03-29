@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0b7f054c.chunk.css",
+    "main.js": "/static/js/main.dc0444cf.chunk.js",
+    "main.js.map": "/static/js/main.dc0444cf.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.1c2d59f4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.1c2d59f4.js.map",
+    "static/css/2.d6d97064.chunk.css": "/static/css/2.d6d97064.chunk.css",
+    "static/js/2.0ac6ffc8.chunk.js": "/static/js/2.0ac6ffc8.chunk.js",
+    "static/js/2.0ac6ffc8.chunk.js.map": "/static/js/2.0ac6ffc8.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1435d52eb9f1becafef05725a251a255.js": "/precache-manifest.1435d52eb9f1becafef05725a251a255.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.d6d97064.chunk.css.map": "/static/css/2.d6d97064.chunk.css.map",
+    "static/css/main.0b7f054c.chunk.css.map": "/static/css/main.0b7f054c.chunk.css.map",
+    "static/js/2.0ac6ffc8.chunk.js.LICENSE.txt": "/static/js/2.0ac6ffc8.chunk.js.LICENSE.txt",
+    "static/media/artistIndexBackground.jpg": "/static/media/artistIndexBackground.08864aa1.jpg",
+    "static/media/all.css": "/static/media/fa-solid-900.cdfec5cf.woff",
+    "static/media/main.css": "/static/media/homePageBackground-4.ddad8f44.jpg",
+    "static/media/login-card-img.png": "/static/media/login-card-img.7ac5ccb1.png",
+    "static/media/profilePageBackground.jpg": "/static/media/profilePageBackground.030624dd.jpg",
+    "static/media/register-card-img.jpg": "/static/media/register-card-img.aaa901a0.jpg",
+    "static/media/songIndexBackground.jpg": "/static/media/songIndexBackground.6b65c487.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1c2d59f4.js",
+    "static/css/2.d6d97064.chunk.css",
+    "static/js/2.0ac6ffc8.chunk.js",
+    "static/css/main.0b7f054c.chunk.css",
+    "static/js/main.dc0444cf.chunk.js"
+  ]
+}
