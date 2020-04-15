@@ -40,7 +40,5 @@ const AudioHandler = ({ isSongPlaying, currentSong, endSong, isPreview }) => (
   </div>
   </>
 )
-  
-
 
 export default AudioHandler
