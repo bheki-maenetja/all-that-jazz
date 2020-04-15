@@ -112,7 +112,7 @@ export default AudioHandler
 - **Audio Handling:** the main challenge for this project was the management of audio. Specifically, it was the issue of allowing users to listen to music whilst navigating through different parts of the website. Each time a user moved to a different page the song would stop playing. After trying (and failing) to implement a solution in which every page had an audio player and the song object would be passed from player to player, I realised that the audio player needed to sit at the top of the app's page structure. This solved the ssue and meant only one audio player was needed for the whole app.  
 
 ### Room for Improvement
-- **Desing & Styling:** though the app works fine on larger viewports, it is not yet ready for a mobile experience. In addition to that, I feel that the design aesthetic needs a less bright and more consistent colour scheme.
+- **Design & Styling:** though the app works fine on larger viewports, it is not yet ready for a mobile experience. In addition to that, I feel that the design aesthetic needs a less bright and more consistent colour scheme.
 - **Playing Songs:** at present, users can only play one song at a time. It would be preferable if users could play one song after the other in their library without having to manually press play on each one. This can be achieved by passing an array of song objects to the audio handler as opposed to just one.
 
 ## Future Features
