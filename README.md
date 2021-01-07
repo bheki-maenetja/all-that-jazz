@@ -16,7 +16,7 @@ All That Jazz is an online music streaming service specifically for jazz lovers.
 - Python 3
 - Django
 - PostgreSQL
-- ReactJS
+- React
 - JavaScript (ES6)
 - HTML 5
 - SCSS/SASS
