@@ -1,5 +1,5 @@
 # All That Jazz (Fullstack Django App)
-All That Jazz is an online music streaming service specifically for jazz lovers. Enjoy golden hits from the golden age of music from artists such as Sinatra, Fitzgerald, Simone, Count Basie and more. This is a fullstack web application built with Django, PostgreSQL and ReactJS.
+All That Jazz is an online music streaming service specifically for jazz lovers. Enjoy golden hits from the golden age of jazz from artists such as Sinatra, Fitzgerald, Simone, Count Basie and more. This is a fullstack web application built with Django, PostgreSQL and ReactJS.
 
 ## Getting Started
 ### Installation
