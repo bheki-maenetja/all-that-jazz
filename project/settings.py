@@ -83,9 +83,11 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = { 
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'USER': 'postgres',
         'NAME': 'jazz-music-db',
         'HOST': 'localhost',
-        'PORT': 5432
+        'PORT': 5432,
+        'PASSWORD': 'Bonanz@4315',
     }
 }
 
