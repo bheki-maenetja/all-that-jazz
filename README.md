@@ -10,7 +10,7 @@ All That Jazz is an online music streaming service specifically for jazz lovers.
 - To view the site locally run the terminal command `python manage.py runserver` and navigate to localhost:8000 in your web browser
 
 ### Deployment
-- You can view a deployed version of the site [here](https://all-that-jazz.herokuapp.com/)
+- You can view a deployed version of the site [here](https://all-that-jazz-3c12c7e3c70f.herokuapp.com/)
 
 ## Technologies Used
 - Python 3
